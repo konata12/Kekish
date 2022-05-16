@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>  
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h2>Блочні та строкові елементи</h2>
+        <div width="500 px">
+            <span>One</span> | <span>Two</span> | <span>Three</span>
+            <h1>Заголовок</h1>
+            <p><span>Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Eum, repellendus.</p>
+            <p>Lorem,<a href="#"> ipsum</a> dolor.</p>
+            <p>Lorem, <strong> dolor. </strong></p>
+        </div>
+
+        <hr>
+
+        <h2>Таблиці</h2>
+        <table border="1" width="400" align="center" bgcolor="pink" cellpadding="10" cellspacing="5">
+            <caption>Таблиця співробітників</caption>
+            <thead>
+                <tr>
+                    <th colspan="3" height="100">staff</th>
+                </tr>
+
+                <tr>
+                    <th colspan="2" rowspan="2">Staff</th>
+                    <th>test</th>
+                </tr>
+
+                <tr>
+                    <th colspan="2">test</th>
+                </tr>
+
+                <tr>
+                    <th width="20%">№ п/п</th>
+                    <th width="40%">Name</th>
+                    <th width="40%">Salary</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <th>№ п/п</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <th rowspan="3">1</th>
+                    <td rowspan="3" align="center">Сергій</td>
+                    <td align="right">$1000</td>
+                </tr>
+
+                <tr>
+                    <td align="right">$1000</td>
+                </tr>
+
+                <tr>
+                    <td align="right">$1000</td>
+                </tr>
+
+                <tr>
+                    <th>2</th>
+                    <td align="center">Сергій</td>
+                    <td align="right">$1000</td>
+                </tr>
+
+                <tr>
+                    <th>3</th>
+                    <td align="center">Сергій</td>
+                    <td align="right">$1000</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table width="500" align="center" border="1" bgcolor="pink">
+            <tbody>
+                <tr>
+                    <td width="33%">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img width="160" src="images/Візитка.jpg">
+                        </a>
+                    </td>
+                    <td width="33%">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img width="160" src="images/Візитка.jpg">
+                        </a>
+                    </td>
+                    <td width="34%">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img width="160" src="images/Візитка.jpg">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>    
+        </table>
+
+        <hr>
+
+        <h2>Форми</h2>
+        <form name="feedback-form" method="get">
+        <!-- <form name="feedback-form" method="get" action="index.js"> -->
+            <fieldset>
+                <legend>Особисті налаштування</legend>
+            
+            <div>
+                <label for="first-name">Вкажіть ваше ім'я</label>
+                <input type="text" name="firstname" placeholder="Укажіть ваше ім'я" value="Sasha" id="first-name" class="form-control">
+            </div>
+
+            <div>
+                <label for="email">email</label>
+                <input type="email" name="email" placeholder="email" id="email">
+            </div>
+
+            <div>
+                <label for="phone">phone</label>
+                <input type="tel" name="phone" placeholder="phone" id="phone">
+            </div>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Safety</legend>
+
+            <div>
+                <label>
+                    Password
+                    <input required type="password" placeholder="password">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Confirm Password
+                    <input required type="password" placeholder="password">
+                </label>
+            </div>
+
+            </fieldset>
+
+            <br>
+
+            <div>
+                <input type="button" value="Я - кнопка">
+                <input type="submit" value="Відправити">
+                <input type="reset" value="Скинути поля форми">
+            </div>
+
+        </form>
+
+    </body>
+
+</html>
