@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <table width="100%" border="0" cellpadding="40">
+            
+            <tbody bgcolor="">
+                <tr>
+                    <td rowspan="5" bgcolor="red" width="20%">111</td>
+                    <td colspan="2" width=""></td>
+                    <td colspan="3" bgcolor="pink" width="40%">111</td>
+                    <td colspan="2" width=""></td>
+                    <td rowspan="5" bgcolor="red" width="20%">111</td>
+                </tr>
+                <tr>
+                    <td colspan="7" bgcolor="blue">111</td>
+                </tr>
+                <tr>
+                    <td width="8%"></td>
+                    <td bgcolor="purple" width="8%">111</td>
+                    <td width="8%"></td>
+                    <td bgcolor="purple" width="8%">111</td>
+                    <td width="8%"></td>
+                    <td bgcolor="purple" width="8%">111</td>
+                    <td width="8%"></td>
+                </tr>
+                <tr>
+                    <td colspan="7" bgcolor="green">111</td>
+                </tr>
+                <tr>
+                    <td colspan="7" bgcolor="purple">111</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        <form>
+            <h2>Форма зворотнього зв'язку</h2>
+            <div>
+                <input type="text" name="" placeholder="">
+            </div>
+
+            <br>
+
+            <div disabled>
+                <input type="text" name="" placeholder="">
+            </div>
+
+            <fieldset>
+                <legend>About your hobby</legend>
+                    <label>
+                        <input checked type="checkbox" name="run" value="run">
+                        <span>Run</span>
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input checked type="checkbox" name="football" value="football">
+                        <span>Football</span>
+                    </label>
+                    <br>
+
+                    <label>
+
+                        <input checked type="checkbox" name="swimming" value="swimming">
+                        <span>Swimming</span>
+                    </label>
+
+                    <hr>
+
+                        <label>
+                             <input type="radio" name="gender" value="man" checked checked>
+                             <span>Woman</span>
+                        </label>
+
+                        <br>
+
+                        <label>
+                            <input type="radio" name="gender" value="man">
+                            <span>Man</span>
+                       </label>
+
+                    <hr>
+                    
+                    <label for="list">List</label>
+                    <select name="list" id="list" value="">
+                        <option value="one">None</option>
+                        <option value="two">list 1</option>
+                        <option value="three" selected="selected">list 2</option>
+                        <option value="four">list 3</option>
+                        <option value="five">list 4</option>
+                        <option value="six">list 5</option>
+                    </select>
+
+                    <br>
+
+                    <select name="group">
+                        <optgroup label="animals">
+                            <option value="lion">lion</option>
+                            <option value="tiger">tiger</option>
+                            <option value="monkey">monkey</option>
+                        </optgroup>
+
+                        <optgroup label="cars">
+                            <option selected value="ford">ford</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Audi">Audi</option>
+                        </optgroup>
+
+                    </select>
+
+                    <br>
+
+                    <select name="list--new" id="list" multiple disabled size="2">
+                        <option value="one">None</option>
+                        <option value="two">list 1</option>
+                        <option value="three" selected="selected">list 2</option>
+                        <option value="four">list 3</option>
+                        <option value="five">list 4</option>
+                        <option value="six">list 5</option>
+                    </select>
+
+                    <hr>
+
+                    <input type="date" value="2022-05-18" min="2022-05-01" max="2023-12-15">
+
+
+                    <hr>
+
+                    <p>dsfsdfsd<time datetime="2001-05-15 19:00">fsdfsdf</time></p>
+                    
+                    <hr>
+
+                    <input type="time" value="12:45">
+
+                    <hr>
+
+                    <input type="week">
+
+                    <hr>
+
+                    <input type="color">
+
+                    <hr>
+
+                    <input type="hidden" name="my-hidden" value="#2a2a2a">
+
+                    <br>
+
+                    <textarea name="message" cols="30" rows="10" minlength="10" maxlength="20"></textarea>
+                </fieldset>
+        
+            
+            <div>
+                <button type="submit">Send</button>
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        
+    </body>
+</html>
