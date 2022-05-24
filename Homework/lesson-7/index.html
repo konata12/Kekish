@@ -12,6 +12,10 @@
             form {
                 width: 550px;
             }
+            textarea {
+                margin-left: 0px;
+
+            }
             .top {
                 margin: 15px 15px 15px 0px;
             }
@@ -22,14 +26,20 @@
                 margin-left: 50px;
             }
             .input-bottom {
-                margin: 10px 0px 10px 15px;
+                margin: 0px 5px 15px 0px;
+            }
+            .label-bottom {
+                margin-right: 30px;
             }
             .field-mid {
                 margin:  10px 0px 10px 0px;
             }
-            /* .field-bot {
-                padding-right: 200px;
-            } */
+            .star {
+                color: red;
+            }
+            .field-bot {
+                padding: 25px;
+            }
             /* .span-top {
                 width: 70px;
             } */
@@ -39,14 +49,15 @@
 
     <body>
         <h1>Форма заявки на роботу в зоопарку</h1>
+        <p><i>Будьласка, заповніть форму. Обов'язкові поля помічені <span class="star">*</span> </i></p>
 
         <form>
             <fieldset class="Contacts">
-                    <legend>Контактні дані</legend>
+                    <legend><big>Контактні дані</big></legend>
 
                 <div>
                         <label for="name">
-                            <span class="span-top">Ім'я</span>
+                            <span class="span-top">Ім'я <span class="star">*</span></span>
                         </label>
                     <input class="input-top" type="text" required name="name"  placeholder="Напишіть своє ім'я" id="name">
                 </div>                   
@@ -60,7 +71,7 @@
 
                 <div>
                         <label for="email">
-                            <span class="span-top">Email</span>
+                            <span class="span-top">Email <span class="star">*</span></span>
                         </label>
                     <input class="input-top" type="email" required name="email"  placeholder="Введіть свою пошту" id="email"> 
                 </div>
@@ -68,10 +79,10 @@
             </fieldset>
 
             <fieldset class="field-mid">
-                <legend>Персональна інформація</legend>
+                <legend><big>Персональна інформація</big></legend>
 
             <div>                
-                <label> Вік
+                <label> Вік <span class="star">*</span>
                     <input type="number" required name="age" placeholder="Введіть ваш вік">
                 </label>
             </div>
@@ -86,7 +97,7 @@
             </div> 
 
             <div>
-                <label> Перерахуйте <wbr>особисті <wbr>якості
+                <label > Перерахуйте особистi якості
                     <textarea cols="30" rows="7" name="personal info" minlength="0" maxlength="100">
 
                     </textarea>
@@ -95,44 +106,44 @@
             </fieldset>
 
             <fieldset class="field-bot">
-                <legend>Виберіть ваших любимих тварин</legend>
+                <legend><big>Виберіть ваших любимих тварин</big></legend>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span>Зебра</span>
                 </label>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span>Слон</span>
                 </label>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span> Кіт</span>
                 </label>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span>Антилопа</span>
                 </label>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span>Анаконда</span>
                 </label>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span>Голуб</span>
                 </label>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span>Людина</span>
                 </label>
 
-                <label>
+                <label class="label-bottom">
                     <input class="input-bottom" type="checkbox">
                     <span>Краб</span>
                 </label>
