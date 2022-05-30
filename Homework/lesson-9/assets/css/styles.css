@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div {
+    
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 38px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background-color: #3984f3;
+    border: 0;
+    font-size: 23px;
+    color: #fff;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    appearance: none;
+    background-image: url(../images/arrows.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    border: none;
+    padding: 0 43px;
+    font-size: 24px;
+    color: #fff;
+    size: 5;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 0 43px;
+    font-size: 24px;
+    color: #fff;
+    appearance: none;
+    background-image: url(../images/calendar.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+article {
+    height: 485px;
+}
+
+.article-form {
+    padding-top: 68px;
+}
+
+.list {
+    width: 348px;
+    height: 69px;
+    margin: 0 29px;
+    /* 58px */
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#form-div {
+    display: flex;
+    width: 1623px;
+    margin: 0 140px;
+}
+
+#caption {
+    width: 759px;
+    margin: 333px 552px 0;
+}
+
+#text {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    padding: 0 auto;
+}

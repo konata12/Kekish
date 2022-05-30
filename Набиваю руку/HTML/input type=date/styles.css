@@ -1,0 +1,32 @@
+.datepicker::-webkit-datetime-edit {
+    padding: 1em;
+}
+.datepicker::-webkit-datetime-edit-fields-wrapper {
+    background: silver;
+}
+.datepicker::-webkit-datetime-edit-text {
+    color: red;
+    padding: 0 0.3em;
+}
+.datepicker::-webkit-datetime-edit-month-field {
+    color: blue;
+}
+.datepicker::-webkit-datetime-edit-day-field {
+    color: green;
+}
+.datepicker::-webkit-datetime-edit-year-field {
+    color: purple;
+}
+.datepicker::-webkit-inner-spin-button {
+    display: none;
+    background-image: url(images/calendar.png);
+}
+/* .datepicker::-webkit-calendar-picker-indicator {
+    background: orange;
+} */
+
+div {
+    width: 300px;
+    height: 150px;
+    border: 1px;
+}

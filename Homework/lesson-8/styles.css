@@ -58,6 +58,7 @@ ol {
 }
 li {
     margin: 8px;
+    list-style-position: inside;
 }
 ::marker {
 
@@ -132,7 +133,9 @@ li {
     margin-right: auto;
     margin-left: auto;
     background-color: pink;
-    background-image: url(https://a.d-cd.net/c1d740ds-960.jpg) ;
+    background-image: url(images/kchay.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .footer-p {
     font-size: small;
