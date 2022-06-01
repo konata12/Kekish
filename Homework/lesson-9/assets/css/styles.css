@@ -13,10 +13,7 @@ body {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-div {
-    
+    padding-bottom: 414px ;
 }
 
 h1 {
@@ -95,12 +92,15 @@ article {
 #form-div {
     display: flex;
     width: 1623px;
+    min-width: 1623px
     margin: 0 140px;
 }
 
 #caption {
     width: 759px;
-    margin: 333px 552px 0;
+    margin: 0px auto;
+    padding-top: 333px;
+    text-align: center;
 }
 
 #text {
@@ -110,7 +110,8 @@ article {
 }
 
 #form {
-    width: 100%;
+    width: 1600px;
     display: flex;
-    padding: 0 auto;
+    padding-top: 40px;
+    margin: 0 auto;
 }
