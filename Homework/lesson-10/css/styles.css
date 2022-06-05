@@ -1,0 +1,379 @@
+@import '../fonts/poppins.css';
+@import '../fonts/montserrat.css';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    /* border: black solid 1p33 */
+}
+header {
+    /* height = 115px */
+    /* height2 = 21px */
+    width: 100%;
+    padding-top: 73px;
+}
+main {
+    width: 1635px;
+    min-width: 1635px;
+    margin: 0 auto;    
+}
+footer {
+    color: #c9c9c9;
+    padding-bottom: 53px ;
+}
+hr {
+    display: inline-block;
+    width: 100%;
+    color: #c9c9c9;
+}
+a:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* header-id */
+#header-man {
+    margin-left: 106px;
+}
+#header-woman {
+    margin: 0 71px;
+}
+#header-kids {
+    margin-right: 1155px;
+}
+#header-button1 {
+    background-image: url(../img/search-ico.png);
+    background-color: #fff;
+    margin: 12px 41px 0 0;
+    width: 15px;
+    height: 15px;
+}
+#header-button2 {
+    background-image: url(../img/cart-ico.png);
+    background-color: #fff;
+    margin: 10px 8px 10px 0;
+    width: 16px;
+    height: 20px;
+}
+
+/* footer-id */
+#footer-man {
+    margin-left: 650px;
+    color: #c9c9c9;
+}
+#footer-woman {
+    margin: 0 72px;
+    color: #c9c9c9;
+}
+#footer-kids {
+    margin-right: 425px;
+    color: #c9c9c9;
+}
+.font-size {
+    font-size: 12px;
+}
+.header-footer {
+    font-size: 12px;
+    width: 1635px;
+    min-width: 1635px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+}
+.line-heigh {
+    line-height: 40px;
+}
+.header-button {
+    border: 0;
+
+}
+
+/* nav */
+.nav {
+    height: 110px;
+    width: 1635px;
+    min-width: 1635px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+.nav div {
+    height: 20px;
+}
+.nav div p {
+    line-height: 10px;
+}
+.nav img {
+    width: 5px;
+    height: 10px;
+    margin: 0 19px;
+}
+
+/* main-class */
+/* section-1 */
+.flex {
+    display: flex;
+}
+.main-section {
+    margin-bottom: 107px;
+}
+.main-section-div-bottom {
+    width: 100%;
+}
+.main-img {
+    width: 720px;
+    height: 890px;
+    margin-bottom: 38px;
+}
+.arrow-button {
+    width: 15px;
+    height: 27px;
+    margin-top: 48px;
+    background-size: cover;
+    background-color: #fff;
+    border: none;
+}
+.arrow-button:hover {
+    cursor: pointer;
+}
+.left {
+    background-image: url(../img/arrow-prev.png);
+    margin-right: 33px;
+}
+.right {
+    background-image: url(../img/arrow-next.png);
+    margin-left: 33px;
+}
+.under-main-img {
+    margin: 0 18px;
+    cursor: pointer;
+}
+.title {
+    margin-top: -14px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.241;
+    text-align: left;
+}
+.main-line {
+    margin-top: 40px;
+}
+.price {
+    line-height: normal;
+    margin-top: 57px;
+    margin-bottom: 49px;
+}
+.pointer:hover {
+    cursor: pointer;
+}
+/* .size-text {
+    overflow: hidden;
+    text-align: center;
+}
+.size {
+    height: 40px;
+    width: 40px;
+    appearance: none;
+    background: white;
+    outline: 2px solid rgb(255, 255, 255);
+    border: 3px solid white;
+}
+.size:focus,
+.size:checked {
+    height: 40px;
+    width: 40px;
+    appearance: none;
+    background: white;
+    outline: 2px solid rgb(0, 0, 0);
+    border: 3px solid white;
+} */
+.size-text {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 37.179px;
+    transition: all 0.3s;
+    text-align: center;
+}
+.size {
+    display: none;
+}
+.boxed input[type="radio"]:checked + label {
+    border: solid 2px black;
+}
+/* input[type="radio"]:checked + label {
+    border: solid 2px rgb(0, 0, 0);
+} */
+.size:hover {
+    cursor: pointer;
+}
+.main-text-div {
+    width: 569px;
+}
+.main-text {
+    text-align: left;
+    line-height: 2.286;
+    margin-top: 57px;
+    margin-bottom: 64px;
+}
+.number {
+    width: 40px;
+    height: 40px;
+    border: black solid 2px;
+    text-align: center;
+}
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.buttons {
+    margin-top: 15px;
+    width: 100%;
+}
+.buttons button {
+    height: 40px;
+    width: 750px;
+    margin-left: 17px;
+    background-color: black;
+    color: #fff;
+}
+.submit {
+    margin-top: 26px;
+    height: 40px;
+    width: 750px;
+    margin-left: 61px;
+    border: black solid 1px;
+    background-color: #fff;
+}
+
+/* section-2 */
+.section-2 {
+    padding: 0 22px;
+}
+.title-2 {
+    text-align: center;
+}
+.product {
+    margin: 0 13px;
+}
+.all-product {
+    margin-top: 46px;
+}
+.all {
+    margin-top: 56px;
+}
+.product-info {
+    text-align: center;
+    margin: -2px 88px 0;
+}
+.eye {
+    width: 20px;
+    height: 12px;
+    background-color: #fff;
+    background-image: url(../img/eye-ico.png);
+    border: none;
+}
+.heart {
+    width: 15px;
+    height: 12px;
+    background-color: #fff;
+    background-image: url(../img/heart-ico.png);
+    border: none;
+}
+
+/* section-3 */
+.section-3 {
+    padding: 160px;
+}
+.section-3 div {
+    text-align: center;
+}
+.subscribe {
+    margin-top: 50px;
+    margin-bottom: 78px;
+}
+.email {
+    width: 395px;
+    margin: 0 auto;
+}
+.email input {
+    border: none;
+    background-color: #fff;
+    margin-right: 69px;
+    width: 250px;
+}
+.email input:active,
+.email input:focus, {
+    border: none;
+    background-color: #fff;
+}
+.email button {
+    border: none;
+    background-color: #fff;
+}
+.email button:active,
+.email button:focus {
+    border: none;
+    background-color: #fff;
+}
+
+/* footer-class */
+.line {
+    margin: 30px auto 45px;
+    width: 1635px;
+}
+.bottom-text {
+    width: 788px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* fonts */
+q:lang(en) {
+    quotes: "\0022" "\0022";
+}
+.grey {
+    color: #cdcdcd;
+}
+.black {
+    color: black;
+}
+.poppins-extralight {
+    font-family: 'Poppins Extra Light';
+}
+.poppins-light {
+    font-family: 'Poppins Light';
+}
+.montserrat-medium {
+    font-family: 'Montserrat Medium';
+}
+.poppins-bold {
+    font-family: 'Poppins Bold';
+}
+.poppins-medium {
+    font-family: 'Poppins Medium';
+}
+.poppins-regular {
+    font-family: 'Poppins Regular';
+}
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-12 {
+    font-size: 12px;
+}
+.font-size-30 {
+    font-size: 30px;
+}
+.font-size-56 {
+    font-size: 56px;
+}
