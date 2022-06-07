@@ -196,16 +196,18 @@ button:hover {
 .size-text {
     display: inline-block;
     width: 40px;
+    max-width: 40px;
     height: 40px;
+    max-height: 40px;
     line-height: 37.179px;
-    transition: all 0.3s;
+    /* transition: all 2s; */
     text-align: center;
 }
 .size {
     display: none;
 }
-.boxed input[type="radio"]:checked + label {
-    border: solid 2px black;
+.size:checked + label {
+    border: black solid 2px;
 }
 /* input[type="radio"]:checked + label {
     border: solid 2px rgb(0, 0, 0);
@@ -306,6 +308,7 @@ button:hover {
 }
 .email input {
     border: none;
+    outline: none;
     background-color: #fff;
     margin-right: 69px;
     width: 250px;
