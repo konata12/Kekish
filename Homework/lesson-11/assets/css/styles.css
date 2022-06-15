@@ -1,0 +1,226 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body {
+    color: #fff;
+}
+/* General/ */
+
+/* Header */
+.header {
+    background-image: url(../img/main-header-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.header-top {
+    padding-top: 52px;
+    display: flex;
+}
+.logo {
+    margin-right: 521px;
+}
+.logo h1 {
+    font-size: 32px;
+    letter-spacing: 1.8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f1cdb3;
+    font-weight: 100;
+}
+.logo p {
+    padding-top: 7px;
+    padding-left: 2px;
+    letter-spacing: 1.35px;
+    font-size: 13px;
+    font-weight: 100;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo-text:first-child a{
+    color: #f1cdb3;
+}
+.logo-text:last-child a{
+    color: #fff;
+}
+.nav {
+    float: left;
+}
+.nav ul{
+    display: flex;
+    color: #cdcdcd;
+    list-style: none;
+    font-size: 15px;
+    padding-top: 23px;
+    letter-spacing: -0.18px;
+}
+.menu-list-item__active {
+    color: #fff;
+}
+.menu-list-item__active:after {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    color: #f1cdb3;
+    content: '';
+}
+.nav-items li{
+    position: relative;
+    display: inline-block;
+    margin-right: 39px;
+}
+.nav-items a {
+    transition: all 0.3s ease-out;
+}
+.nav-items a:hover {
+    color: #fff;
+}
+.nav-items a::after {
+    contain: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    color: #f1cdb3;
+}
+li a {
+    color: #cdcdcd;
+    text-decoration: none;
+}
+.nav-items li:nth-child(2) {
+    margin-right: 41px;
+}
+.nav-items li:last-child {
+    margin: 0;
+}
+
+.header-bot {
+    padding-top: 241px;
+    padding-bottom: 269px;
+}
+.header-bot h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 44px;
+    font-weight: 100;
+    letter-spacing: 2.8px;
+    line-height: 1.295;    
+}
+.main-text {
+    padding-top: 28px;
+    font-size: 15px;
+    color: #cdcdcd;
+    line-height: 1.6;
+    letter-spacing: -0.15px;  
+}
+.more-dogs {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #f1cdb3;
+    padding: 0 44px;
+    margin-top: 38px;
+    transition: all 0.3s ease-out;
+}
+.more-dogs:hover,
+.more-dogs:hover a {
+    background-color: #e29b68;
+    color: #fff;
+}
+.more-dogs a {
+    background-color: #f1cdb3;
+    line-height: 52px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #292929;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+}
+/* Header/ */
+
+/* Main */
+.section-grey {
+    background-color: #f6f6f6;
+}
+.section-white {
+    background-color: #fafafa;
+}
+/* Section-1 */
+.about-shelter {
+    padding: 90px 149px 85px 168px;
+}
+.about-img {
+    width: 300px;
+}
+.about-text {
+    padding-top: 24px;
+    padding-left: 118px;
+}
+.about-text h2 {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(84, 84, 84);
+    line-height: 1.286;   
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.about-text p{
+    color: #4c4c4c;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.6;
+    letter-spacing: -0.2px;
+    padding-left: 2px;
+}
+.about_p-1 {
+    margin-top: 29px
+}
+.about_p-2 {
+    margin-top: 22px
+}
+/* Section-1/ */
+
+/* Section-2 */
+.section-2 div {
+    padding-top: 70px;
+}
+.section-2_title {
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(84, 84, 84);
+    line-height: 1.286;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+/* Section-2/ */
+/* Main/ */
+
+/* Additional */
+.flex {
+    display: flex;
+}
+.container {
+    /* margin: 0 auto; */
+    margin-left: 375px;
+    width: 1170px;
+}
+.pointer {
+    cursor: pointer;
+}
+.inline-block {
+    display: inline-block;
+}
+/* Additional/ */
+
+/* Fonts */
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
