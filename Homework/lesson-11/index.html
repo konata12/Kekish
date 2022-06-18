@@ -5,31 +5,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/modal.css">
         <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- js -->
+        <script src="assets/js/modal.js"></script>
 
         <title>Gozy House</title>
     </head>
     
-    <body class="arial">
+    <body class="arial regular">
+        <a name="logo"></a>
         <header class="header">
             <div class="container">
                 <div class="header-top">
                     <div class="logo">
                         <h1 class="logo-text pointer">
-                            <a class="pointer" href="#">Cozy House</a>
+                            <a class="pointer" href="#logo">Cozy House</a>
                         </h1>
 
                         <p class="logo-text pointer">
-                            <a class="pointer" href="#">Shelter for pets in Boston</a> 
+                            <a class="pointer" href="#logo">Shelter for pets in Boston</a> 
                         </p>
                     </div>
 
                     <nav class="nav">
                         <ul class="nav-items">
-                            <li class="pointer"><a href="#">About the shelter</a></li>
-                            <li class="pointer menu-list-item__active"><a class="menu-list-item__active" href="#">Our pets</a></li>
-                            <li class="pointer"><a href="#">To help the shelter</a></li>
-                            <li class="pointer"><a href="#">Contacts</a></li>
+                            <li class="pointer"><a href="#section-1">About the shelter</a></li>
+                            <li class="pointer menu-list-item__active"><a class="" href="#section-2">Our pets</a></li>
+                            <li class="pointer"><a href="#section-3">To help the shelter</a></li>
+                            <li class="pointer"><a href="#section-4">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -46,17 +52,18 @@
                     </p>
 
                     <p class="more-dogs pointer">
-                        <a class="inline-block" href="#">Make a friend</a>
+                        <a class="inline-block" href="html/categories-page.html">Make a friend</a>
                     </p>
                 </div>
             </div>
         </header>
 
         <main>
-            <section class="section section-1 section-white">
+            <a name="section-1"></a>
+            <section class="section section-1 section-white" id="sectiom-1">
                 <div class="container about-shelter flex">
                     <div class="about-img">
-                        <img src="assets/img/about-img.jpg" alt="dog">
+                        <img src="assets/img/about-img.png" alt="dog">
                     </div>
 
                     <div class="about-text">
@@ -83,50 +90,428 @@
                 </div>
             </section>
 
-            <section class="section section-2 section-grey">
+            <a name="section-2"></a>
+            <section class="section section-2 section-grey" id="sectiom-2">
                 <div class="container ">
                     <h2 class="section-2_title">
                         Our friends who<br>are looking for a house
                     </h2>
 
-                    <div class="banner">
-                        <button>
-
+                    <div class="banner flex">
+                        <button class="slide pointer">
+                            <img src="assets/img/long-left-arrow.png" alt="">
                         </button>
 
-                        <div class="banner-items">
+                        <div class="banner-items flex">
                             <div class="banner-item">
+                                <img class="pointer" id="item-1_1" src="assets/img/banner-item-1.png" alt="">
 
+                                <p class="name">
+                                    Katrine
+                                </p>
+
+                                <p class="item inline-block pointer" id="item-1">
+                                    <a>
+                                        Learn More
+                                    </a>
+                                </p>
                             </div>
 
                             <div class="banner-item">
+                                <img class="pointer" id="item-2_1" src="assets/img/banner-item-2.png" alt="">
 
+                                <p class="name">
+                                    Jeanifer
+                                </p>
+
+                                <p class="item inline-block pointer" id="item-2">
+                                    <a>
+                                        Learn More
+                                    </a>
+                                </p>
                             </div>
 
                             <div class="banner-item">
+                                <img class="pointer" id="item-3_1" src="assets/img/banner-item-3.png" alt="">
 
+                                <p class="name">
+                                    Woody
+                                </p>
+
+                                <p class="item inline-block pointer" id="item-3">
+                                    <a>
+                                        Learn More
+                                    </a>
+                                </p>
                             </div>
                         </div>
 
-                        <button>
-
+                        <button class="slide pointer">
+                            <img src="assets/img/long-right-arrow.png" alt="">
                         </button>
                     </div>
 
-                    <p class="more-dogs pointer">
-                        <a class="inline-block" href="#">Make a friend</a>
+                    <p class="more-dogs pointer" id="know-more-dogs">
+                        <a class="inline-block" href="html/categories-page.html">Get to know the rest</a>
                     </p>
                 </div>
             </section>
 
-            <section class="section">
+            <a name="section-3"></a>
+            <section class="section section-3 section-white" id="sectiom-3">
+                <div class="container text-center georgia">
+                    <h2 class="regular">
+                        Than you can help<br>
+                        our shelter
+                    </h2>
 
+                    <div class="help-items">
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/pet-food.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Pet food
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/transport.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Transportation
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/toys.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Toys
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/bowl.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Bowls and cups
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/shampoo.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Shampoos
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/pills.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Vitamins
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/medicine.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Medicines
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/collar.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Collars / leashes
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="help-item pointer">
+                            <a href="#">    
+                                <img src="assets/img/sleep-area.png">
+                            </a>
+
+                            <p>
+                                <a href="#">
+                                    Sleeping area
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="section">
+            <a name="section-4"></a>
+            <section class="section section-4" id="sectiom-4">
+                <div class="container flex">
+                    <div class="donation-img">
+                        <img src="assets/img/donation-dog.png" alt="">
+                    </div>
 
+                    <div class="donation-text">
+                        <h2 class="regular">
+                            In addition, you<br>
+                            can make a donation
+                        </h2>
+
+                        <label class="regular inline-block">
+                            Name of the bank / Type of bank account
+                        </label>
+
+                        <div>
+                            <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="8380 2880 8028 8791 7435">
+                        </div>
+
+                        <p class="regular">
+                            Legal information and lorem ipsum dolor sit amet, consectetur<br>
+                            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed<br>
+                            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum<br>
+                            et malesuada fames ac ante ipsum primis in faucibus. 
+                        </p>
+                    </div>
+                </div>
             </section>
         </main>
         
+        <footer class="footer">
+            <div class="container flex">
+                <div class="footer-text regular">
+                    <h2 class="regular">
+                        For questions<br>
+                        and suggestions
+                    </h2>
+
+                    <p class="regular " id="info-1">
+                        email@shelter.com
+                    </p>
+
+                    <p class="regular " id="info-2">
+                        +13 674 567 75 54
+                    </p>
+                </div>
+
+                <div class="footer-text regular">
+                    <h2 class="regular">
+                        We are waiting<br>
+                        for your visit
+                    </h2>
+
+                    <p class="regular " id="info-3">
+                        Boston, Central Street, 1st<br>
+                        (Entrance from the store)
+                    </p>
+
+                    <p class="regular " id="info-4">
+                        London, South Park, 18st
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal" id="modal-1">
+            <div class="modal-window flex relative">
+                <p class="close" id="close-1">
+                    <img src="assets/img/cancel.png">
+                </p>
+
+                <div class="modal-img">
+                    <img src="assets/img/banner-item-1.png">
+                </div>
+
+                <div class="modal-text">
+                    <h2 class="regular">
+                        Charly
+                    </h2>
+
+                    <p class="regular paragraph-1">
+                        Pooch
+                    </p>
+
+                    <p class="regular paragraph-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce<br>
+                        efficitur blandit condimentum. Proin accumsan lorem vel gra<br>
+                        vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.<br>
+                        Donec consectetur, diam in porta tempus, urna ligula ves<br>
+                        tibulum nibh.
+                    </p>
+
+                    <ul class="regular">
+                        <li><span>Age: 4 months</span></li>
+                        <li><span>Inoculations: none</span></li>
+                        <li><span>Diseases: none</span></li>
+                        <li><span>Parasites: none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-2">
+            <div class="modal-window flex relative">
+                <p class="close"  id="close-2">
+                    <img src="assets/img/cancel.png">
+                </p>
+
+                <div class="modal-img">
+                    <img src="assets/img/banner-item-2.png">
+                </div>
+
+                <div class="modal-text">
+                    <h2 class="regular">
+                        Charly
+                    </h2>
+
+                    <p class="regular paragraph-1">
+                        Pooch
+                    </p>
+
+                    <p class="regular paragraph-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce<br>
+                        efficitur blandit condimentum. Proin accumsan lorem vel gra<br>
+                        vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.<br>
+                        Donec consectetur, diam in porta tempus, urna ligula ves<br>
+                        tibulum nibh.
+                    </p>
+
+                    <ul class="regular">
+                        <li><span>Age: 4 months</span></li>
+                        <li><span>Inoculations: none</span></li>
+                        <li><span>Diseases: none</span></li>
+                        <li><span>Parasites: none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-3">
+            <div class="modal-window flex relative">
+                <p class="close" id="close-3">
+                    <img src="assets/img/cancel.png">
+                </p>
+
+                <div class="modal-img">
+                    <img src="assets/img/banner-item-3.png">
+                </div>
+
+                <div class="modal-text">
+                    <h2 class="regular">
+                        Charly
+                    </h2>
+
+                    <p class="regular paragraph-1">
+                        Pooch
+                    </p>
+
+                    <p class="regular paragraph-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce<br>
+                        efficitur blandit condimentum. Proin accumsan lorem vel gra<br>
+                        vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.<br>
+                        Donec consectetur, diam in porta tempus, urna ligula ves<br>
+                        tibulum nibh.
+                    </p>
+
+                    <ul class="regular">
+                        <li><span>Age: 4 months</span></li>
+                        <li><span>Inoculations: none</span></li>
+                        <li><span>Diseases: none</span></li>
+                        <li><span>Parasites: none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // modal-open-button_click
+            let item_1 = document.querySelector('#item-1')
+            item_1.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-1').classList.add('modal-active')
+            })
+
+            let item_2 = document.querySelector('#item-2')
+            item_2.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-2').classList.add('modal-active')
+            })
+
+            let item_3 = document.querySelector('#item-3')
+            item_3.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-3').classList.add('modal-active')
+            })
+
+            // modal-open-img_click
+            let item_1_1 = document.querySelector('#item-1_1')
+            item_1_1.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-1').classList.add('modal-active')
+            })
+
+            let item_2_1 = document.querySelector('#item-2_1')
+            item_2_1.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-2').classList.add('modal-active')
+            })
+
+            let item_3_1 = document.querySelector('#item-3_1')
+            item_3_1.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-3').classList.add('modal-active')
+            })
+
+            // modal-close
+            let close_1 = document.querySelector('#close-1')
+            close_1.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-1').classList.remove('modal-active')
+            })
+
+            let close_2 = document.querySelector('#close-2')
+            close_2.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-2').classList.remove('modal-active')
+            })
+
+            let close_3 = document.querySelector('#close-3')
+            close_3.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector('#modal-3').classList.remove('modal-active')
+            })
+        </script>
     </body>
 </html>
