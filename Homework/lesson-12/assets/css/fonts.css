@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'segoe_ui';
+    src: url(../fonts/SegoeUI.ttf);
+}
+@font-face {
+    font-family: 'segoe_ui-semibold';
+    src: url(../fonts/SegoeUI-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'segoe_ui-bold';
+    src: url(../fonts/SegoeUI-Bold.ttf);
+}
