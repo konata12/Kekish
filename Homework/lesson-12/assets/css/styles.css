@@ -8,6 +8,8 @@
 }
 body {
     font-family: 'roboto-regular';
+    /* background: rgb(21,70,157);
+    background: linear-gradient(136deg, #00ACD4 8.75%,#81EAEE 204.24%); */
 }
 /* Genral/ */
 /* Header */
@@ -113,6 +115,7 @@ body {
 /* Header-bot */
 .header-bot {
     padding: 15px 0 19px;
+    background-color: #fff;
 }
 .header-bot_nav {
     float: right;
@@ -306,6 +309,9 @@ form input[type='email'] {
 }
 #terms-check + label a {
     color: #5F6B7C;
+}
+#terms-check + label a:hover {
+    color: #902d95;
 }
 .article-1 form button {
     margin-top: 20px;
@@ -588,13 +594,22 @@ form input[type='email'] {
     float: right;
 }
 .webinars {
-    padding: 70px 0;
+    padding: 70px 0 131px;
     width: 370px;
     background-color: #EFF0F4;
     border-radius: 4px;
+    overflow: hidden;
 }
-.webinars > div {
+.webinars + .webinars {
+    margin-left: 30px;
+}
+.webinars > div:nth-child(1),
+.webinars > div:nth-child(2),
+.webinars > div:nth-child(3) {
     position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
 }
 .webinars div:first-child {
     margin-left: 2px;
@@ -631,7 +646,7 @@ form input[type='email'] {
 }
 .date p:first-child {
     font-family: 'roboto-regular';
-    font-weight: 500;
+    font-weight: 900;
     font-size: 21px;
     line-height: 25px;
     letter-spacing: -0.05em;
@@ -648,7 +663,7 @@ form input[type='email'] {
 .veb-content {
     padding: 35px 27px 30px 31px;
 }
-.veb-content p:first-child {
+.develop {
     font-family: 'roboto-regular';
     font-weight: 500;
     font-size: 12px;
@@ -668,6 +683,10 @@ form input[type='email'] {
     cursor: pointer;
     margin-bottom: 20px;
 }
+.veb-content h3 a {
+    color: #1D1D1F;
+    text-decoration: none;
+}
 .veb-content-main-text {
     font-family: 'segoe_ui';
     font-weight: 400;
@@ -677,8 +696,250 @@ form input[type='email'] {
     opacity: 0.9;
     letter-spacing: 0px;
 }
+.tags {
+    margin-top: 26px;
+}
+.tags p {
+    display: inline-block;
+    font-family: 'roboto-regular';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #5F6B7C;
+    background-color: #F6F6F8;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-right: -1px;
+    padding: 0 10px;
+    letter-spacing: 0.4px;
+}
+.tags p a {
+    text-decoration: none;
+    color: #5F6B7C;
+}
 /* Section-3/ */
 /* Main/ */
+
+/* Footer */
+.footer {
+    background-color: #2D2C31;
+}
+/* Footer-top */
+.footer-top {
+    padding: 75px 0 60px;
+    border-bottom: 1px solid #1D1C20;
+}
+.footer-top div:nth-child(2) {
+    padding-left: 86px;
+}
+.footer-top div:nth-child(3) {
+    padding-left: 104px;
+}
+.footer-top div:nth-child(4) {
+    padding-left: 132px;
+    margin-top: -30px;
+}
+.footer-top div img {
+    margin-top: 17px;
+    margin-left: 2px;
+}
+.footer-top div .botline {
+    margin-top: 18px;
+    margin-left: 3px;
+}
+.footer-top div p {
+    font-family: 'roboto-regular';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: 0.7px;
+    color: #03BED7;
+    margin-left: 12px;
+    margin-top: 1px;
+}
+.footer-top div:nth-child(3) p {
+    margin-top: 2px;
+}
+.links {
+    padding-left: 2px;
+    padding-top: 12px;
+}
+.links li {
+    font-family: 'segoe_ui';
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0.002em;
+    color: #F7F7F9;
+}
+.links li a {
+    color: #F7F7F9;
+    text-decoration: none;
+}
+.agreement {
+    width: 318px;
+    padding: 30px 22px 160px;
+    background-color: rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+}
+.agreement p:first-child {
+    font-family: 'roboto-regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.7px;
+    color: #03BED7;
+    margin-left: 4px;
+}
+.agreement p:nth-child(2) {
+    font-family: 'segoe_ui';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.001em;
+    color: #FFFFFF;
+    margin-left: 6px;
+    padding-right: 45px;
+}
+#email {
+    position: relative;
+    padding: 0;
+}
+.agreement input[type="email"] {
+    width: 273px;
+    padding: 6px 0 5px 14px;
+    margin-left: 1px;
+    margin-top: -10px;
+    background: #FFFFFF;
+    border-radius: 50px;
+
+    font-family: 'segoe_ui';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0;
+}
+.agreement input[type="email"]::placeholder {
+    color: #9EA6B1;
+}
+.agreement button {
+    width: 104px;
+    background: linear-gradient(130.16deg, #00ACD4 8.75%,#81EAEE 204.24%);
+    box-shadow: 0px 11px 17px rgba(43, 45, 55, 0.1),
+                0px 5px 8px rgba(44, 45, 55, 0.05);
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 7px 17px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    margin-bottom: 0;
+
+    font-family: 'roboto-regular';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.agreement button:hover {
+    /* background-color: linear-gradient(130.16deg, #5d96ff 8.75%,#00d0ff 204.24%); */
+    background-color: #000;
+}
+#email-check {
+    display: none;
+}
+#email-check + label {
+    position: relative;
+    top: -8px;
+    display: inline-block;
+    margin-top: 31px;
+    margin-left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #9EA6B1;
+    border-radius: 2px;
+}
+#email-check:checked + label {
+    background-color: #fff;
+}
+#email-check + label + p {
+    display: inline-block;
+    font-family: 'segoe_ui';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #5F6B7C;
+    margin: 29px 0 26px 4px;
+    cursor: pointer;
+    letter-spacing: 0;
+}
+#email-check + label + p span {
+    margin-left: 1px;
+    position: relative;
+    top: 4px;
+}
+#email-check + label + p a {
+    color: #5F6B7C;
+}
+#email-check + label + p a:hover {
+    color: #902d95;
+}
+/* Footer-top/ */
+
+/* Footer-bot */
+.footer-bot {
+    padding: 27px 0 72px;
+}
+.nav-bot {
+    padding-left: 112px;
+}
+.nav-bot p {
+    float: left;
+    margin-top: 14px;
+    opacity: 0.99;
+}
+.nav-bot p:hover {
+    opacity: 1;
+}
+.nav-bot p:first-child {
+    margin-right: 48px;
+}
+.nav-bot p:nth-child(2) {
+    margin-right: 49px;
+}
+.nav-bot p a {
+    font-family: 'roboto-regular';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+.nav-bot:last-child {
+    padding-left: 494px;
+}
+.nav-bot:last-child a + a {
+    margin-left: 28px;
+}
+.nav-bot:last-child img {
+    margin-top: 7px;
+}
+
+
+/* Footer-bot/ */
+/* Footer/ */
 
 /* Additional */
 .banner-container {
