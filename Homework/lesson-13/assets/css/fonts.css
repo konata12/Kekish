@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'asap-regular';
+    src: url(../fonts/static/Asap-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'asap-medium';
+    src: url(../fonts/static/Asap-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'asap-bold';
+    src: url(../fonts/static/Asap-Bold.ttf);
+}
