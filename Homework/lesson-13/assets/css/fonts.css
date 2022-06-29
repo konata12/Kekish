@@ -12,3 +12,11 @@
     font-family: 'asap-bold';
     src: url(../fonts/static/Asap-Bold.ttf);
 }
+@font-face {
+    font-family: 'asap-italic';
+    src: url(../fonts/static/Asap-Italic.ttf);
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fonts/static/Montserrat-Regular.ttf);
+}
