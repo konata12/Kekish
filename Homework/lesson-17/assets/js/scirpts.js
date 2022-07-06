@@ -7,6 +7,7 @@ jq2(function( $ ) {
         loop:true,
         margin:5,
         nav:false,
+        dots:false,
         responsive:{
             0:{
                 items:1
@@ -35,4 +36,5 @@ jq2(function( $ ) {
             }
         }
     })
+    $( "#datepicker" ).datepicker();
 });

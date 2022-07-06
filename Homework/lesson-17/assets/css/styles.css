@@ -422,16 +422,19 @@
 .teammate {
     position: relative;
     width: 100%;
-    background-image: url(/assets/img/teammate-1.jpg);
+    /* background-image: url(/assets/img/teammate-1.jpg); */
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 360px 30px 0;
+    /* padding: 360px 30px 0; */
 }
 .credit {
-    /* width: 100%; */
+    width: calc(100% - 60px);
     position: absolute;
+    bottom: -126px;
+    left: 30px;
     background-color: #fff;
     padding: 35px 50px 36px;
+    margin: 0 auto;
 }
 .teammates .teammate:hover .credit {
     transform: translateY(-50px);
@@ -452,12 +455,14 @@
     color: #888;
 }
 .credit > .flex {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     padding-top: 30px;
     justify-content: space-evenly;
 }
 .teammates .teammate:hover .credit > .flex {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 .link {
     display: flex;
@@ -468,17 +473,459 @@
     border: 1px solid #1e2528;
     border-radius: 50%;
 }
-.link:nth-child(2) {
-    border: none;
-    background-color: #ff817e;
-}
 .link:hover {
     border: none;
     background-color: #ff817e;
 }
 /* Section-6/ */
 
+/* Section-7 */
+.section-7 {
+    padding-top: 146px;
+}
+.section-7 .flex div:nth-child(1) {
+    background-color: rgb(238, 233, 220);    
+}
+.section-7 .flex div:nth-child(1) img {
+    /* width: 100%; */
+}
+.section-7 .flex div:nth-child(2) {
+    width: 100%;
+    background-color: #fff9f8;
+    padding-top: 90px;
+    padding-left: 110px;
+}
+.section-7 form {
+    margin: 0 -10px;
+    width: 64%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-7 form input,
+.section-7 form div {
+    display: flex;
+    align-items: flex-end;
+    padding: 37px 0px 15px;
+    margin: 0 15px;
+    width: calc(50% - 15px);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d4d3d3;
+
+    font-family: 'roboto';
+    font-size: 14px;
+    color: #999999;
+}
+.section-7 form div {
+    position: relative;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+.section-7 form div p {
+    width: 95%;
+    margin-top: 2px;
+}
+.section-7 form div img {
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+.section-7 form div ul {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: -109px;
+    left: 50%;
+    z-index: 2;
+}
+.section-7 form div:hover ul {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    bottom: -109px;
+    left: 0px;
+}
+.section-7 form div li {
+    background-color: #fff9f8;
+    list-style-type: none;
+    display: inline-block;
+    width: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.section-7 form div li:hover {
+    background-color: #ffabaa;
+}
+.section-7 form input:focus,
+.section-7 form select:focus {
+    border-bottom: 1px solid #d4d3d3;
+    outline: none;
+}
+.section-7 form input:nth-child(odd),
+.section-7 form div {
+    width: calc(50% - 5px);
+    padding-left: 0;
+    margin-left: 0px;
+    margin-right: 5px
+}
+.section-7 form input:nth-child(even) {
+    margin-right: 0px;
+}
+.section-7 form input::placeholder,
+.section-7 form select {
+    align-items: flex-end;
+    font-family: 'roboto';
+    font-size: 12px;
+    color: #999999;
+    text-transform: uppercase;
+}
+.section-7 form input[type='date'] {
+    background-image: url(../img/date.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 99% 43px;
+}
+/* date */
+#ui-datepicker-div {
+    font-family: 'roboto';
+    color: rgb(65, 65, 65);
+
+    background-color: #fff0ee;
+    border-radius: 2px;
+}
+#ui-datepicker-div:hover {
+    background-color: #ffdbdb;
+}
+.ui-corner-all {
+    cursor: pointer;
+}
+.ui-datepicker-next {
+    float: right;
+}
+.ui-datepicker-title {
+    text-align: center;
+}
+.ui-datepicker-calendar thead {
+    font-family: 'rufina-bold';
+}
+.ui-datepicker-calendar tbody td {
+    font-family: 'roboto-light';
+    font-size: 14px;
+    text-align: end;
+    text-decoration: none;
+    color: #888888;
+}
+.ui-datepicker-calendar tbody td:hover {
+    background-color: #ffabaa;
+    border-radius: 2px;
+}
+.ui-datepicker-calendar tbody td a {
+    text-decoration: none;
+    color: #888888;
+}
+/* date/ */
+.section-7 form input[type='time'] {
+    background-image: url(../img/time.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 99% 41px;
+}
+.section-7 form input:nth-child(7) {
+    width: 100%;
+    margin: 45px 0 0;
+}
+.section-7 button {
+    background-color: #ff817e;
+    border-radius: 50px;
+    border: none;
+    padding: 18px 28px 16px;
+    margin-top: 40px;
+    cursor: pointer;
+
+    font-family: 'roboto-medium';
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 0.8px;
+}
+/* Section-7/ */
+
+/* Section-8 */
+.section-8 {
+    text-align: center;
+
+    padding-top: 129px;
+}
+.section-8 .container h2 {
+    font-family: 'rufina-bold';
+    font-size: 42px;
+    color: #1e2528;
+}
+.section-8 .container > p {
+    font-family: 'roboto-light';
+    font-size: 15px;
+    color: #888888;
+    line-height: 1.8;
+
+    margin-top: 22px;
+    padding: 0 225px;
+}
+.relaxes {
+    margin: 87px -15px 140px;
+    flex-wrap: wrap;
+}
+.relaxes > div {
+    width: 33.33%;
+    padding: 0 15px;
+}
+.relax {
+    padding: 20px 20px 48px;
+    outline: 1px solid #e3e6ea;
+    transition: all 0.5s ease-out;
+}
+.relax:hover {
+    outline: none;
+    box-shadow: 0px 15px 40px 0px rgba(4, 10, 50, 0.1);
+}
+.relax img {
+    width: 100%;
+}
+.relax > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29px;
+}
+.relax div:nth-child(2) p {
+    font-family: 'roboto-light';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888888;
+
+    padding: 0 11px;
+}
+.relax div:nth-child(2) p:nth-child(3) {
+    margin: 0;
+}
+.relax > div:nth-child(2) div {
+    border: none;
+    outline: none;
+    width: 1px;
+    background-color: #888888;
+    height: 10px;
+}
+.relax p:nth-child(3) {
+    font-family: 'rufina-bold';
+    font-size: 22px;
+    color: #1e2528;
+
+    margin-top: 15px;
+}
+.relax p:nth-child(4) {
+    font-family: 'roboto-light';
+    font-size: 14px;
+    color: #888888;
+    line-height: 1.929;
+
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+.relax a {
+    text-decoration: none;
+}
+.relax a p {
+    background-color: #30383b;
+    border-radius: 50px;
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 43.5%;
+
+    font-family: 'roboto-medium';
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+.relax:hover a p {
+    background-color: #ff817e;
+}
+/* Section-8/ */
+
+/* Section-9 */
+.section-9 {
+    text-align: center;
+
+    margin-top: -18px;
+}
+.section-9 .container h2 {
+    font-family: 'rufina-bold';
+    font-size: 42px;
+    color: #1e2528;
+}
+.section-9 .container > p {
+    font-family: 'roboto-light';
+    font-size: 15px;
+    color: #888888;
+    line-height: 1.8;
+
+    padding: 0 225px;
+    margin-top: 22px;
+}
+.section-9 .container > .flex {
+    padding: 107px 100px 107px 106px;
+}
+.info {
+    width: 37%;
+}
+.info-in + .info-in {
+    padding-top: 48px;
+}
+.info-in div:nth-child(1) {
+    background-color: #ff817e;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-in div:nth-child(2) {
+    margin-top: -2px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'roboto';
+    font-size: 14px;
+    color: #888888;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.929;
+    letter-spacing: 0.2px;
+}
+.info-in div:nth-child(2) p {
+    width: 100%;
+}
+.info-form {
+    width: 100%;
+}
+.info-form form {
+    padding-left: 130px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+}
+.info-form form input {
+    outline: 1px solid #e3e6ea;
+    border: none;
+    border-radius: 0;
+    padding: 18px 18px 16px;
+    width: 100%;
+
+    letter-spacing: 0.2px;
+    font-family: 'roboto-light';
+    font-size: 12px;
+    color: #888888;
+}
+.info-form form input:nth-child(2) {
+    margin-top: 20px;
+}
+.info-form form input::placeholder {
+    font-family: 'roboto-light';
+    font-size: 12px;
+    color: #888888;
+    text-transform: uppercase;
+}
+.info-form form textarea {
+    margin-top: 22px;
+    outline: 1px solid #e3e6ea;
+    border: none;
+    border-radius: 0;
+    padding: 29px 18px 7px;
+    width: 100%;
+    resize: none;
+
+    letter-spacing: 0.2px;
+    text-align: left;
+    font-family: 'roboto-light';
+    font-size: 12px;
+    color: #888888;
+    text-transform: uppercase;
+}
+.info-form form textarea:focus {
+    text-transform: lowercase;
+}
+.section-9 button {
+    background-color: #ff817e;
+    border-radius: 50px;
+    border: none;
+    padding: 17px 28px 17px;
+    margin-top: 31px;
+    cursor: pointer;
+    width: 31%;
+
+    font-family: 'roboto-medium';
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+/* Section-9/ */
+
 /* Main/ */
+
+/* Footer */
+.footer {
+    margin-top: 35px;
+    padding: 99px 0px;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+.footer .flex {
+    justify-content: center;
+}
+.footer .container .flex:nth-child(2) {
+    margin-top: 43px;
+}
+.footer .flex p {
+    font-family: 'roboto-medium';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    padding: 0 33px;
+}
+.footer .flex a {
+    color: #263a41;
+    text-decoration: none;
+}
+.footer .container .flex:nth-child(3) {
+    margin-top: 46px;
+}
+.footer .container .flex:nth-child(3) div {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+}
+.footer .container .flex:nth-child(3) div + div {
+    border-left: 1px solid #888888;
+}
+.footer .container > p {
+    margin-top: 46px;
+
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 13px;
+    color: #888888;
+    text-transform: uppercase;
+}
+.footer .container > p span {
+    color: #ff817e;
+}
+/* Footer/ */
 
 /* Addons */
 .container {
