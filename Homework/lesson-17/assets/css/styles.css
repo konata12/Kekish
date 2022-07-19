@@ -954,11 +954,11 @@
 /* Adaptive */
 @media (max-width: 1670px) {
 /* Main */
-        #hortenzia {
-            position: absolute;
-            top: 133px;
-            right: -200px;
-        }
+    #hortenzia {
+        position: absolute;
+        top: 133px;
+        right: -200px;
+    }
 /* Main/ */
 }
 @media (max-width: 1600px) {
