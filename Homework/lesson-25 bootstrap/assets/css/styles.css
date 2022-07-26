@@ -1,0 +1,26 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+/* General/ */
+
+/* Header */
+.header {
+    background-color: transparent;
+    position: fixed;
+}
+/* Header/ */
+
+/* Main */
+
+/* Section-1 */
+.section-1 {
+    height: 100vh;
+    width: 100%;
+}
+/* Section-1/ */
+
+/* Main/ */
