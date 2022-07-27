@@ -21,6 +21,138 @@
     height: 100vh;
     width: 100%;
 }
+.owl-carousel {
+    height: 100%;
+    position: relative;
+}
+.owl-stage-outer {
+    height: 100%;
+}
+.owl-stage {
+    height: 100%;
+}
+.owl-item {
+    height: 100%;
+}
+.item {
+    height: 100%;
+}
+.item {
+    background-image: url(../img/bg-sec1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.302);
+    border-radius: 4px;
+    width: 840px;
+    height: 170px;
+
+    font-family: 'lato';
+    color: #74c7d5;
+}
+.item-text div:nth-child(1) {
+    width: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: right;
+}
+.item-text div:nth-child(1) p {
+    font-size: 60px;
+    font-family: 'lato-thin';
+    font-weight: 700;
+    line-height: 0.967;
+    text-align: right;
+
+    margin-bottom: 0px;
+    margin-right: -15px;
+}
+.item-text div:nth-child(1) p span {
+    text-transform: uppercase;
+    display: block;
+}
+.item-text div:nth-child(2) {
+    margin-bottom: 0px;
+    display: flex;
+    width: 50%;
+    justify-content: left;
+    margin-right: 30px;
+}
+.item-text div:nth-child(2) p {
+    font-size: 138.48px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'lato-black';
+    transform: scaleX(0.85);
+      
+    margin-bottom: 0px;
+    width: 100%;
+}
+/* Carousel nav */
+.owl-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: calc(50% - 22.5px);
+    left: 0;
+    /* padding: 0, 50px; */
+}
+.owl-carousel img {
+    width: 50%;
+}
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span {
+    display: inline-block;
+    height: 100%;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.502);
+    /* margin: 0, 50px; */
+}
+/* Carousel nav/ */
+
+/* Carousel dots */
+.owl-dots {
+    position: absolute;
+    bottom: 91px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.owl-carousel button.owl-dot {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255, 0.502);
+    margin: 0, 20px;
+}
+.owl-carousel button.owl-dot.active {
+    border-radius: 50%;
+    background-color: rgb(116, 199, 213);
+    width: 20px;
+    height: 20px;
+}
+/* Carousel dots/ */
+  
 /* Section-1/ */
 
 /* Main/ */
+
+/* Fonts */
+/* 
+    font-family: 'damion';
+    font-family: 'lato-thin';
+    font-family: 'lato';
+    font-family: 'lato-black';
+    font-family: 'lato-bold';
+    font-family: 'lato-light';
+*/
+/* Fonts/ */

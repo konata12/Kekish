@@ -4,5 +4,6 @@
         "sourceMap": false, // true => generate source maps (.css.map files)
         "out": "../css/styles.css",
         "autoprefixer": "> 100%, last 2 Chrome versions, not ie 6-9"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
