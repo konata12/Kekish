@@ -1,3 +1,4 @@
+console.dir(document)
 // Header
 const header = document.getElementById('header')
 console.dir(header)
@@ -35,9 +36,12 @@ function change_color() {
     sec_1_btn.classList.add('tag-active')
 
 }
+if ((sec_1.getBoundingClientRect() + sec_1.clientHeight() - 1) <= sec_1.offsetTop()) {
+    sec_1_btn.classList.add('tag-active')
+}
  
 sec_1_btn.addEventListener('click', handle_button_click_1);
-sec_1_btn.addEventListener('click', change_color);
+// sec_1_btn.addEventListener('click', change_color);
 
 // .offsetTop
 // .offsetTop
