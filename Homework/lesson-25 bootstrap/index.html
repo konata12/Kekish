@@ -7,7 +7,7 @@
         
         <!-- links -->
         <link rel="stylesheet" href="assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-        <!-- <link rel="stylesheet" href="assets/vendor/bootstrap-4.6.2-dist/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap-4.6.2-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/fonts.css">
         <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -15,22 +15,30 @@
     </head>
 
     <body>
-        <header class="header">
+        <header class="header fixed-top" id="header">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-1 col-xsm-1">
-                        <img src="assets/img/logo.png" alt="">
+                <div class="row justify-content-between">
+                    <div class="col-xl-2 col-lg-2 col-md-1 col-xs-1 header-img">
+                        <a href="#">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
                     </div>
 
-                    <div class="nav">
-
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 nav justify-content-end">
+                        <ul>
+                            <li class="tag" id="home-btn">Home</li>
+                            <li class="tag" id="services-btn">Services</li>
+                            <li class="tag"id="about-btn">About</li>
+                            <li class="tag" id="work-btn">Work</li>
+                            <li class="tag" id="contacts-btn">Contacts</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="section-1">
+            <section class="section-1" id="home">
                 <div class="owl-carousel">
                     <div class="item">
                         <div class="item-text">
@@ -80,25 +88,115 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="section-2" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>
+                                our services
+                            </h2>
+
+                            <h3>
+                                Cras commodo mattis justo nec <span>lobortis</span>. Nam ut 
+                                tellus lobortis, ullamcorper massa sit amet
+                            </h3>
+
+                            <p>
+                                Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere 
+                                lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies 
+                                commodo est. Quisque at ante vitae justo fermentum viverra ac eu 
+                                justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="section-2_item col-xl-3">
+                            <div class="section-2_item-position">
+                                <div class="section-2_item-img">
+                                    <img src="assets/img/light-bulb.png" alt="">
+                                </div>
+
+                                <div class="section-2_item-text">
+                                    <h4>
+                                        researching
+                                    </h4>
+
+                                    <p>
+                                        Praesent interdum blandit quam. Asunt in anim uis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-2_item col-xl-3">
+                            <div class="section-2_item-position">
+                                <div class="section-2_item-img">
+                                    <img src="assets/img/magicwand.png" alt="">
+                                </div>
+
+                                <div class="section-2_item-text">
+                                    <h4>
+                                        design
+                                    </h4>
+
+                                    <p>
+                                        Praesent interdum blandit quam. Asunt in anim uis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-2_item col-xl-3">
+                            <div class="section-2_item-position">
+                                <div class="section-2_item-img">
+                                    <img src="assets/img/gears.png" alt="">
+                                </div>
+
+                                <div class="section-2_item-text">
+                                    <h4>
+                                        development
+                                    </h4>
+
+                                    <p>
+                                        Praesent interdum blandit quam. Asunt in anim uis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-2_item col-xl-3">
+                            <div class="section-2_item-position">
+                                <div class="section-2_item-img">
+                                    <img src="assets/img/rocket.png" alt="">
+                                </div>
+
+                                <div class="section-2_item-text">
+                                    <h4>
+                                        launch
+                                    </h4>
+
+                                    <p>
+                                        Praesent interdum blandit quam. Asunt in anim uis aute 
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <!-- <div class="item-text">
-            <div>
-                <p>
-                    <span>good ideas</span> comes 
-                </p>
-            </div>
-
-            <div>
-                <p>
-                    first!
-                </p>
-            </div>
-        </div> -->
         <script src="assets/vendor/jquery-3.6.0.min.js"></script>
         <script src="assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="assets/vendor/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/libriaries.js"></script>
         <script src="assets/js/scripts.js"></script>
     </body>
 </html>
