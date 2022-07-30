@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 const prevIcon = '<img src="../img/arrow-left.png" alt="prev">'
 const nextIcon = '<img src="../img/arrow-right.png" alt="next">'
 
@@ -18,7 +17,11 @@ $(document).ready(function(){
         }
     });
 });
-=======
+// Header
+const header = document.getElementById('header')
+console.dir(header)
+console.dir(header.scrollIntoView)
+
 // Header
 const header = document.getElementById('header')
 console.dir(header)
@@ -61,4 +64,4 @@ sec_1_btn.addEventListener('click', handle_button_click_1);
 sec_1_btn.addEventListener('click', change_color);
 
 // .offsetTop
->>>>>>> Stashed changes
+// .offsetTop
