@@ -37,25 +37,17 @@ function handle_button_click_1() {
     // change color
     // sec_1_btn.classList.add('tag-active')
 }
-function change_color() {
-    sec_1_btn.classList.add('tag-active')
-
-}
-// console.dir(header.getBoundingClientRect().top)
-// console.dir(sec_1.getBoundingClientRect().top + sec_1.clientHeight)
+console.dir(header.getBoundingClientRect().top)
+console.dir(sec_1.getBoundingClientRect().top + sec_1.clientHeight - 1)
 
 function change_color() {
-    if ( (header.getBoundingClientRect().top) <= (sec_1.getBoundingClientRect().top + sec_1.clientHeight) ) {
+    if ( (header.getBoundingClientRect().top) <= (sec_1.getBoundingClientRect().top + sec_1.clientHeight - 1) ) {
         sec_1_btn.classList.add('tag-active')
-    } else if ( (header.getBoundingClientRect().top) <= (sec_2.getBoundingClientRect().top + sec_1.clientHeight) ) {
+    } else if ( (header.getBoundingClientRect().top) <= (sec_2.getBoundingClientRect().top + sec_1.clientHeight - 1) ) {
         sec_2_btn.classList.add('tag-active')
     }
 }
 
-body.addEventListener('click', change_color())
+body.addEventListener('c', change_color())
  
-// sec_1_btn.addEventListener('click', handle_button_click_1);
-// sec_1_btn.addEventListener('click', change_color);
-
-// .offsetTop
-// .offsetTop
+sec_1_btn.addEventListener('click', handle_button_click_1);
