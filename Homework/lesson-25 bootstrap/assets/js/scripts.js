@@ -1,4 +1,9 @@
 console.dir(document)
+// Body
+const html = document.getElementById('html')
+const body = html.children[1]
+console.dir(body)
+
 // Header
 const header = document.getElementById('header')
 console.dir(header)
@@ -36,11 +41,20 @@ function change_color() {
     sec_1_btn.classList.add('tag-active')
 
 }
-if ((sec_1.getBoundingClientRect() + sec_1.clientHeight() - 1) <= sec_1.offsetTop()) {
-    sec_1_btn.classList.add('tag-active')
+// console.dir(header.getBoundingClientRect().top)
+// console.dir(sec_1.getBoundingClientRect().top + sec_1.clientHeight)
+
+function change_color() {
+    if ( (header.getBoundingClientRect().top) <= (sec_1.getBoundingClientRect().top + sec_1.clientHeight) ) {
+        sec_1_btn.classList.add('tag-active')
+    } else if ( (header.getBoundingClientRect().top) <= (sec_2.getBoundingClientRect().top + sec_1.clientHeight) ) {
+        sec_2_btn.classList.add('tag-active')
+    }
 }
+
+body.addEventListener('click', change_color())
  
-sec_1_btn.addEventListener('click', handle_button_click_1);
+// sec_1_btn.addEventListener('click', handle_button_click_1);
 // sec_1_btn.addEventListener('click', change_color);
 
 // .offsetTop
