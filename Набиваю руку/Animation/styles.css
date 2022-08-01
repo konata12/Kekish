@@ -28,7 +28,9 @@
 .bottom-border {
     width: 500px;
     height: 35px;
-    border: 1px solid #47c5d2;
+    stroke-dasharray: 1120;
+    stroke-width: 5px;
+    stroke: #19f6e8;
     border-radius: 1px;
     background-color: blue;
     /* #9c23b8 */
