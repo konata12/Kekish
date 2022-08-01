@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.main {
+    transition: all 0.3s ease-out;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(18, 0, 88);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.top {
+
+}
+.text {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bottom-border {
+    width: 500px;
+    height: 35px;
+    border: 1px solid #47c5d2;
+    border-radius: 1px;
+    background-color: blue;
+    /* #9c23b8 */
+    animation-name: border-appearance;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.bottom-inner {
+
+}
+
+/* Keyframes */
+@keyframes border-appearance {
+    0% {
+        /* transform: translate(-100%, -100%); */
+    }
+
+    100% {
+        /* transform: translate(0%, 0%); */
+    }
+}
