@@ -77,28 +77,21 @@ body {
 
 .shape1,
 .shape2 {
-    stroke-dasharray: 1120;
+    stroke-dasharray: 560;
     stroke-width: 5px;
     fill: transparent;
     stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition-timing-function: linear;
     transition: stroke-dashoffset 3s, stroke-dasharray 3s;
-    transition-timing-function: cubic-bezier(
-        0.000
-        , 
-        0.467
-        , 
-        0.449
-        , 
-        1.000
-        );
 }
 
 .shape1 {
-    stroke-dashoffset: 1120;
+    stroke-dashoffset: 0;
 }
 
 .shape2 {
-    stroke-dashoffset: 1120;
+    stroke-dashoffset: -560;
 }
 
 .text {
@@ -116,6 +109,6 @@ body {
     stroke-dasharray: 560;
 }
 .svg-wrapper:hover .shape2 {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: -1120;
     stroke-dasharray: 560;
 }

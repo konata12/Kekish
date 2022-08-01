@@ -54,54 +54,40 @@
     }
 } */
 
-html,
-body {
-    background: rgb(20, 20, 20);
+html, body {
+    background: rgb(20,20,20);
     text-align: center;
     height: 100%;
     overflow: hidden;
     margin: 0;
-}
-
-::selection {
-    background: linear-gradient(90deg, rgba(191, 18, 218, 1) 0%, rgba(78, 221, 232, 1) 100%);
-}
-
-.svg-wrapper {
+  }
+  ::selection {
+    background: linear-gradient(90deg, rgba(191,18,218,1) 0%, rgba(78,221,232,1) 100%);
+  }
+  .svg-wrapper {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     margin: 0 auto;
     width: 500px;
-}
-
-.shape1,
-.shape2 {
-    stroke-dasharray: 1120;
+  }
+  .shape1,
+  .shape2 {
+    stroke-dasharray: 560;
     stroke-width: 5px;
     fill: transparent;
     stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition-timing-function: linear;
     transition: stroke-dashoffset 3s, stroke-dasharray 3s;
-    transition-timing-function: cubic-bezier(
-        0.000
-        , 
-        0.467
-        , 
-        0.449
-        , 
-        1.000
-        );
-}
-
-.shape1 {
-    stroke-dashoffset: 1120;
-}
-
-.shape2 {
-    stroke-dashoffset: 1120;
-}
-
-.text {
+  }
+  .shape1 {
+    stroke-dashoffset: 0;
+  }
+  .shape2 {
+    stroke-dashoffset: 0;
+  }
+  .text {
     font-family: 'Roboto Condensed';
     font-size: 22px;
     line-height: 32px;
@@ -109,13 +95,9 @@ body {
     color: #fff;
     top: -48px;
     position: relative;
-}
-
-.svg-wrapper:hover .shape1 {
-    stroke-dashoffset: 560;
-    stroke-dasharray: 560;
-}
-.svg-wrapper:hover .shape2 {
+  }
+  .svg-wrapper:hover .shape1,
+  .svg-wrapper:hover .shape2 {
     stroke-dashoffset: 0;
-    stroke-dasharray: 560;
-}
+    stroke-dasharray: 0;
+  }
