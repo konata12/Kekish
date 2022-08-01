@@ -32,10 +32,7 @@ console.dir(sec_2_btn.scrollHeight)
 
 // Scroll and color function
 function handle_button_click_1() {
-    // move
     sec_1.scrollIntoView({block: "center", behavior: "smooth"});
-    // change color
-    // sec_1_btn.classList.add('tag-active')
 }
 console.dir(header.getBoundingClientRect().top)
 console.dir(sec_1.getBoundingClientRect().top + sec_1.clientHeight - 1)
@@ -48,6 +45,9 @@ function change_color() {
     }
 }
 
-body.addEventListener('c', change_color())
+// body.addEventListener('scroll', change_color())
+body.addEventListener('scroll', function(e) {
+    console.log(e)
+})
  
 sec_1_btn.addEventListener('click', handle_button_click_1);
