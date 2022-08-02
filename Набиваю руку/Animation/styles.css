@@ -75,22 +75,46 @@ body {
     width: 500px;
 }
 
-.shape1,
+.shape1 {
+    stroke-dasharray: 1120;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: #19f6e8;
+    animation-name: shape_1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000);
+}
+/* stroke-dashoffset 3s, stroke-dasharray 3s; */
 .shape2 {
     stroke-dasharray: 1120;
     stroke-width: 5px;
     fill: transparent;
     stroke: #19f6e8;
-    transition: stroke-dashoffset 3s, stroke-dasharray 3s;
-    transition-timing-function: cubic-bezier(
-        0.000
-        , 
-        0.467
-        , 
-        0.449
-        , 
-        1.000
-        );
+    animation-name: shape_2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000);
+}
+
+@keyframes shape_1 {
+    from {
+        stroke-dashoffset: 1120;
+    }
+    to {
+        stroke-dashoffset: 560;
+        stroke-dasharray: 560;
+    }
+}
+
+@keyframes shape_2 {
+    from {
+        stroke-dashoffset: 1120;
+    }
+    to {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 560;
+    }
 }
 
 .shape1 {
@@ -111,11 +135,11 @@ body {
     position: relative;
 }
 
-.svg-wrapper:hover .shape1 {
+/* .svg-wrapper:hover .shape1 {
     stroke-dashoffset: 560;
     stroke-dasharray: 560;
 }
 .svg-wrapper:hover .shape2 {
     stroke-dashoffset: 0;
     stroke-dasharray: 560;
-}
+} */
