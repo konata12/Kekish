@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* .main {
+    transition: all 0.3s ease-out;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(18, 0, 88);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.top {
+
+}
+.text {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bottom-border {
+    width: 500px;
+    height: 35px;
+    stroke-dasharray: 1120;
+    stroke-width: 5px;
+    stroke: #19f6e8;
+    border-radius: 1px;
+    background-color: blue;
+    #9c23b8
+    animation-name: border-appearance;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.bottom-inner {
+
+}
+
+ Keyframes 
+@keyframes border-appearance {
+    0% {
+        transform: translate(-100%, -100%); 
+    }
+
+    100% {
+        transform: translate(0%, 0%); 
+    }
+} */
+
+html,
+body {
+  background: rgb(20, 20, 20);
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+::selection {
+  background: linear-gradient(90deg, rgba(191, 18, 218, 1) 0%, rgba(78, 221, 232, 1) 100%);
+}
+
+.svg-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 500px;
+  height: 60px;
+
+  /* box-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+
+  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b; */
+}
+
+.shape1 {
+  stroke-dasharray: 560;
+  stroke-dashoffset: 0;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #19f6e8;
+  animation-name: shape_1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000);
+}
+
+.shape2 {
+  stroke-dasharray: 560;
+  stroke-dashoffset: 0;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #19f6e8;
+  animation-name: shape_2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000);
+}
+
+@keyframes shape_1 {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 0;
+  }
+}
+
+@keyframes shape_2 {
+  from {
+      stroke-dashoffset: 0;
+  }
+  to {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 0;
+  }
+}
+
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
