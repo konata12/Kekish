@@ -57,46 +57,87 @@
 html,
 body {
   background: rgb(20, 20, 20);
-  text-align: center;
   height: 100%;
   overflow: hidden;
   margin: 0;
 }
 
-::selection {
-  background: linear-gradient(90deg, rgba(191, 18, 218, 1) 0%, rgba(78, 221, 232, 1) 100%);
+svg {
+  border-radius: 2px;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper:hover .sqr {
+  animation-play-state: paused;
+}
+
+.sqr {
+  height: 35px;
+  width: 35px;
+  background: rgb(191,18,218);
+  background: linear-gradient(90deg, rgba(191,18,218,1) 0%, rgba(78,221,232,1) 100%);
+
+  position: relative;
+  top: 0;
+  left: -10px;
+  animation-name: square;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /* animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000); */
+  animation-timing-function: linear;
+}
+
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+
+  width: 700px;
+  transform: translateY(80%);
+  padding: 0 45px;
 }
 
 .svg-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  /* position: relative;
+  top: 0%; */
+  transform: translateY(50%);
   margin: 0 auto;
-  width: 500px;
-  height: 60px;
+  width: 700px;
+  height: 50px;
 
-  /* box-shadow: 
-  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
-
-  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
-  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
-  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
-
-  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
-  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
-  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b; */
+  box-shadow: 
+  rgb(78, 222, 232, 0.9) 0px 0px 4px 0px, 
+  rgb(78, 222, 232, 0.9) 0px 0px 6px 2px,
+  inset rgb(78, 222, 232, 0.9) 0px 0px 4px 0px, 
+  inset rgb(78, 222, 232, 0.9) 0px 0px 6px 2px;
 }
 
 .shape1 {
+  border-radius: 2px;
   stroke-dasharray: 560;
   stroke-dashoffset: 0;
   stroke-width: 5px;
-  fill: transparent;
-  stroke: #19f6e8;
+  fill: rgb(192, 192, 192);
+  fill: none;
+  /* stroke: #19f6e8; */
+  /* stroke: rgb(25, 246, 232, .8); */
+  /* stroke: rgb(191, 18, 218, .8); */
+  stroke: rgba(255, 255, 255, 0.6);
   animation-name: shape_1;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000);
+  /* animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000); */
+  animation-timing-function: ease-out;
 }
 
 .shape2 {
@@ -111,7 +152,60 @@ body {
   animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000);
 }
 
-@keyframes shape_1 {
+/* 
+  Keyframes
+*/
+
+@keyframes square {
+  /* Up */
+  0% {
+    background: rgb(191, 18, 218);
+    transform: scale(0, 0) translate(0px, 0px);
+  }
+
+  10% {
+    background: rgb(191, 18, 218);
+    transform: scale(.125, .25) translate(10px, -80px);
+  }
+
+  10% {
+    background: rgb(191, 18, 218);
+    transform: scale(.25, .25) translate(12.5px, -100px);
+  }
+  /* Up/ */
+
+  /* Down */
+  50% {
+    transform: scale(.25, .75) translate(12.5px, 35px);
+  }
+
+  70% {
+    background: linear-gradient(20deg, rgba(95,151,248,1) 0%, rgba(127,100,251,1) 100%);
+    transform: scale(.25, .25) translate(12.5px, 210px);
+  }
+  /* Down/ */
+
+  95% {
+    background: linear-gradient(20deg, rgba(95,151,248,1) 0%, rgba(127,100,251,1) 100%);
+    transform: scale(1, 1) translate(12.5px, 50px);
+  }
+
+  100% {
+    transform: scale(1, 1) translate(-325px, 50px);
+  }
+}
+
+@keyframes letters {
+  0% {
+
+  }
+
+  100% {
+
+  }
+}
+
+/* @keyframes shape_1 {
   from {
     stroke-dashoffset: 0;
   }
@@ -119,7 +213,7 @@ body {
       stroke-dashoffset: 0;
       stroke-dasharray: 0;
   }
-}
+} */
 
 @keyframes shape_2 {
   from {
@@ -129,14 +223,4 @@ body {
       stroke-dashoffset: 0;
       stroke-dasharray: 0;
   }
-}
-
-.text {
-  font-family: 'Roboto Condensed';
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 8px;
-  color: #fff;
-  top: -48px;
-  position: relative;
 }
