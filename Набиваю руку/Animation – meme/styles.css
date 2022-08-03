@@ -229,7 +229,7 @@ svg {
   }
 }
 
-/* @keyframes shape_1 {
+@keyframes shape_1 {
   from {
     stroke-dashoffset: 0;
   }
@@ -237,7 +237,7 @@ svg {
       stroke-dashoffset: 0;
       stroke-dasharray: 0;
   }
-} */
+}
 
 @keyframes shape_2 {
   from {
