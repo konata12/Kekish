@@ -74,9 +74,9 @@ svg {
   flex-direction: column;
 }
 
-.wrapper:hover .sqr {
+/* .wrapper:hover .sqr {
   animation-play-state: paused;
-}
+} */
 
 .sqr {
   height: 35px;
@@ -86,11 +86,16 @@ svg {
 
   position: relative;
   left: -10px;
-  transition: all 4px linear;
-  animation-name: square;
-  animation-duration: 4s;
+  /* animation-name: square;
+  animation-duration: 3.5s;
   animation-iteration-count: infinite;
-  /* animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000); */
+  animation-timing-function: linear; */
+}
+
+.wrapper:hover .sqr{
+  animation-name: square;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
@@ -237,14 +242,26 @@ svg {
     left: -335px;
   }
 
+  88% {
+    transform: scale(1, 1) rotate(-25deg) translate(-3px, -13px);
+    bottom: -50px;
+    left: -335px;
+  }
+
   90% {
     transform: scale(1, 1) rotate(-30deg) translate(-3px, -13px);
     bottom: -50px;
     left: -335px;
   }
 
+  92% {
+    transform: scale(1, 1) rotate(-25deg) translate(-3px, -13px);
+    bottom: -50px;
+    left: -335px;
+  }
+
   100% {
-    transform: scale(1, 1);
+    transform: scale(1, 1) rotate(0deg) translate(2px, 0px);
     bottom: -50px;
     left: -335px;
   }
@@ -260,7 +277,7 @@ svg {
   }
 }
 
-@keyframes shape_1 {
+/* @keyframes shape_1 {
   from {
     stroke-dashoffset: 0;
   }
@@ -268,7 +285,7 @@ svg {
       stroke-dashoffset: 0;
       stroke-dasharray: 0;
   }
-}
+} */
 
 @keyframes shape_2 {
   from {
