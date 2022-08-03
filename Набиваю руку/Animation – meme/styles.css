@@ -85,8 +85,8 @@ svg {
   background: linear-gradient(90deg, rgba(191,18,218,1) 0%, rgba(78,221,232,1) 100%);
 
   position: relative;
-  top: 0;
   left: -10px;
+  transition: all 4px linear;
   animation-name: square;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -158,38 +158,46 @@ svg {
 
 @keyframes square {
   /* Up */
-  /* 0% {
+  0% {
     background: rgb(191, 18, 218);
-    transform: scale(0, 0) translate(0px, 0px);
+    transform: scale(0, 0);
+    bottom: -20px;
+    left: -15px;
   }
 
   10% {
     background: rgb(191, 18, 218);
-    transform: scale(.125, .25) translate(10px, -80px);
-  } */
+    transform: scale(.125, .25);
+    bottom: -10px;
+    left: -12px;
+  }
 
-  0% {
+  25% {
     background: rgb(191, 18, 218);
-    transform: scale(.25, .25) translate(12.5px, -100px);
+    transform: scale(.25, .25);
+    bottom: 0px;
+    left: -9px;
   }
   /* Up/ */
 
   /* Down */
-  25% { /*50%*/
-    transform: scale(.25, .5) translate(12.5px, -22.5px);
+  40% { 
+    transform: scale(.25, .75);
+    bottom: -35px;
+    left: -9px;
   }
 
-  50% { /*50%*/
+  /* 30% { 
     transform: scale(.25, .75) translate(12.5px, 55px);
   }
 
-  75% { /*50%*/
+  55% { 
     transform: scale(.25, .5) translate(12.5px, 117px);
   }
 
-  87.5% { /*50%*/
-    transform: scale(.25, .375) translate(12.5px, 157px);
-  }
+  75% { 
+    transform: scale(.25, .375) translate(12.5px, 159px);
+  } */
 
   /* 90.125% {
     transform: scale(.25, .34375) translate(12.5px, 175px);
@@ -203,20 +211,43 @@ svg {
     transform: scale(.25, .28125) translate(12.5px, 215px);
   } */
 
-  100% {
+  50% {
     background: linear-gradient(20deg, rgba(95,151,248,1) 0%, rgba(127,100,251,1) 100%);
-    transform: scale(.25, .25) translate(12.5px, 245px);
+    transform: scale(.25, .375);
+    bottom: -60px;
+    left: -9px;
   }
   /* Down/ */
 
-  /* 100% {
+  60% {
     background: linear-gradient(20deg, rgba(95,151,248,1) 0%, rgba(127,100,251,1) 100%);
-    transform: scale(1, 1) translate(12.5px, 50px);
-  } */
+    transform: scale(1, 1);
+    bottom: -50px;
+    left: -9px;
+  }
+  70% {
+    transform: scale(3, 1);
+    bottom: -50px;
+    left: -180px;
+  }
 
-  /* 100% {
-    transform: scale(1, 1) translate(-325px, 50px);
-  } */
+  80% {
+    transform: scale(1, 1);
+    bottom: -50px;
+    left: -335px;
+  }
+
+  90% {
+    transform: scale(1, 1) rotate(-30deg) translate(-3px, -13px);
+    bottom: -50px;
+    left: -335px;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    bottom: -50px;
+    left: -335px;
+  }
 }
 
 @keyframes letters {
@@ -229,7 +260,7 @@ svg {
   }
 }
 
-/* @keyframes shape_1 {
+@keyframes shape_1 {
   from {
     stroke-dashoffset: 0;
   }
@@ -237,7 +268,7 @@ svg {
       stroke-dashoffset: 0;
       stroke-dasharray: 0;
   }
-} */
+}
 
 @keyframes shape_2 {
   from {
