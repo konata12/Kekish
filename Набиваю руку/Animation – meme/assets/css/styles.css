@@ -175,7 +175,7 @@ svg {
 .bot-wrapper::after {
   content: '';
   width: 700px;
-  height: 450px;
+  height: 400px;
   position: absolute;
   top: -500px;
   left: -500px;
@@ -189,11 +189,12 @@ svg {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3be9f2",endColorstr="#b224d2",GradientType=1);
 
   animation-name: border;
-  animation-duration: 2.6s;
+  /* animation-duration: 2.55s; */
+  animation-duration: 5.2s;
   animation-delay: 0;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.815, 0.110, 0.255, 0.780);
+  animation-timing-function: cubic-bezier(0.740, 0.005, 0.245, 1.000);
 }
 
 .veil {
@@ -201,6 +202,24 @@ svg {
   height: 46px;
   background-color: #080e1e;
   z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wider {
+  background: #0c1427;
+  width: 100%;
+  height: 100%;
+
+  animation-name: inside;
+  /* animation-duration: 2.55s; */
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.450, 0.205, 0.000, 0.210);
 }
 
 /* 
@@ -382,11 +401,37 @@ svg {
 @keyframes border {
   0% {
     top: -500px;
-    left: -624px;
+    left: -581px;
+    transform: rotate(30deg);
+  }
+
+  50% {
+    top: -175px;
+    left: 0px;
+    transform: rotate(30deg);
   }
 
   100% {
-    top: -200px;
+    top: -175px;
     left: 0px;
+    transform: rotate(210deg);
+  }
+}
+
+@keyframes inside {
+  0% {
+    transform: scale(0, 0);
+  }
+
+  30% {
+    transform: scale(0.1, 1);
+  }
+
+  40% {
+    transform: scale(0.13, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
   }
 }
