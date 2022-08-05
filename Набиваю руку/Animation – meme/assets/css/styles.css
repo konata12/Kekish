@@ -1,3 +1,7 @@
+/* Font */
+@import url(fonts.css);
+/* Font/ */
+
 * {
   padding: 0;
   margin: 0;
@@ -88,29 +92,36 @@ svg {
   left: -10px;
   animation-name: square;
   animation-duration: 3.52s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   /* animation-timing-function: linear; */
   animation-timing-function: cubic-bezier(0.250, 0.250, 0.730, 0.375);
 }
 
-/* .wrapper:hover .sqr{
-  animation-name: square;
-  animation-duration: 3.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-} */
-
 .text {
-  font-family: 'Roboto Condensed';
-  font-size: 22px;
+  font-family: 'point-soft';
+  font-size: 32px;
   line-height: 32px;
   letter-spacing: 4px;
   color: #fff;
   text-transform: uppercase;
 
+  display: flex;
+  align-items: center;
   width: 700px;
-  transform: translateY(80%);
   padding: 0 45px;
+  position: relative;
+  left: -288px;
+  top: 18px;
+  animation-name: letters;
+  animation-delay: 2.6s;
+  animation-duration: 1.16s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.letter {
+  display: inline-block;
+  transform: scaleY(1.1);
 }
 
 .svg-wrapper {
@@ -279,11 +290,13 @@ svg {
 
 @keyframes letters {
   0% {
-
+    left: -288px;
+    opacity: 0;
   }
 
   100% {
-
+    left: 0;
+    opacity: 1;
   }
 }
 
