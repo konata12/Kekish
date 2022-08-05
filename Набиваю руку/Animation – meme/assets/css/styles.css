@@ -78,9 +78,9 @@ svg {
   flex-direction: column;
 }
 
-.wrapper:hover .sqr {
+/* .wrapper:hover .sqr {
   animation-play-state: paused;
-}
+} */
 
 .sqr {
   height: 35px;
@@ -90,6 +90,7 @@ svg {
 
   z-index: 2;
   position: relative;
+  border-radius: 1px;
   left: -10px;
   animation-name: square;
   animation-duration: 3.52s;
@@ -155,49 +156,51 @@ svg {
   animation-timing-function: ease-out;
 }
 
-.svg-wrapper {
-  /* position: relative;
-  top: 0%; */
+.bot-wrapper {
+  position: relative;
+  top: 0;
   transform: translateY(50%);
   margin: 0 auto;
   width: 700px;
   height: 50px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
-  box-shadow: 
-  rgb(78, 222, 232, 0.9) 0px 0px 4px 0px, 
-  rgb(78, 222, 232, 0.9) 0px 0px 6px 2px,
-  inset rgb(78, 222, 232, 0.9) 0px 0px 4px 0px, 
-  inset rgb(78, 222, 232, 0.9) 0px 0px 6px 2px;
+  background-color: transparent;
 }
 
-.shape1 {
-  border-radius: 2px;
-  stroke-dasharray: 560;
-  stroke-dashoffset: 0;
-  stroke-width: 5px;
-  fill: rgb(192, 192, 192);
-  fill: none;
-  /* stroke: #19f6e8; */
-  /* stroke: rgb(25, 246, 232, .8); */
-  /* stroke: rgb(191, 18, 218, .8); */
-  stroke: rgba(255, 255, 255, 0.6);
-  animation-name: shape_1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  /* animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000); */
-  animation-timing-function: ease-out;
+.bot-wrapper::after {
+  content: '';
+  width: 700px;
+  height: 450px;
+  position: absolute;
+  top: -500px;
+  left: -500px;
+  transform: rotate(30deg);
+  z-index: 1;
+
+  background: rgb(59,233,242);
+  background: -moz-linear-gradient(-90deg, rgba(59,233,242,1) 0%, rgba(178,36,210,1) 100%);
+  background: -webkit-linear-gradient(-90deg, rgba(59,233,242,1) 0%, rgba(178,36,210,1) 100%);
+  background: linear-gradient(-90deg, rgba(59,233,242,1) 0%, rgba(178,36,210,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3be9f2",endColorstr="#b224d2",GradientType=1);
+
+  animation-name: border;
+  animation-duration: 2.6s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.815, 0.110, 0.255, 0.780);
 }
 
-.shape2 {
-  stroke-dasharray: 560;
-  stroke-dashoffset: 0;
-  stroke-width: 5px;
-  fill: transparent;
-  stroke: #19f6e8;
-  animation-name: shape_2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.000, 0.2, 0.8, 1.000);
+.veil {
+  width: 696px;
+  height: 46px;
+  background-color: #080e1e;
+  z-index: 2;
 }
 
 /* 
@@ -376,22 +379,14 @@ svg {
   }
 }
 
-/* @keyframes shape_1 {
-  from {
-    stroke-dashoffset: 0;
+@keyframes border {
+  0% {
+    top: -500px;
+    left: -624px;
   }
-  to {
-      stroke-dashoffset: 0;
-      stroke-dasharray: 0;
-  }
-} */
 
-@keyframes shape_2 {
-  from {
-      stroke-dashoffset: 0;
-  }
-  to {
-      stroke-dashoffset: 0;
-      stroke-dasharray: 0;
+  100% {
+    top: -200px;
+    left: 0px;
   }
 }
