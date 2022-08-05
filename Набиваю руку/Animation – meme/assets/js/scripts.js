@@ -1,6 +1,5 @@
 const letter = document.getElementsByClassName('letter')
 console.dir(letter)
-// .innerHTML
 
 for (key of letter) {
     if ( key.innerHTML === 'e') {
