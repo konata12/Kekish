@@ -160,19 +160,27 @@ svg {
   height: 46px;
   background-color: #080e1e;
   z-index: 2;
+  position: relative;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+#alert-message,
+#alert-user-message {
+  z-index: 5;
+}
+
 .wider {
   background: #0c1427;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
 
   animation-name: inside;
-  /* animation-duration: 2.55s; */
   animation-duration: 2s;
   animation-delay: 0;
   animation-iteration-count: 1;
