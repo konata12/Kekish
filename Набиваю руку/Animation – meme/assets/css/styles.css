@@ -78,9 +78,9 @@ svg {
   flex-direction: column;
 }
 
-.wrapper:hover .sqr {
+/* .wrapper:hover .sqr {
   animation-play-state: paused;
-}
+} */
 
 .sqr {
   height: 35px;
@@ -88,11 +88,13 @@ svg {
   background: rgb(191,18,218);
   background: linear-gradient(225deg, rgba(73,174,246,1) 0%, rgba(181,61,244,1) 100%);
 
+  z-index: 2;
   position: relative;
   left: -10px;
   animation-name: square;
   animation-duration: 3.52s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   /* animation-timing-function: linear; */
   animation-timing-function: cubic-bezier(0.250, 0.250, 0.730, 0.375);
 }
@@ -105,12 +107,13 @@ svg {
   color: #fff;
   text-transform: uppercase;
 
+  height: 35.2px;
   display: flex;
   align-items: center;
   width: 700px;
   padding: 0 45px;
   position: relative;
-  left: -288px;
+  left: 0px;
   top: 18px;
   animation-name: letters;
   animation-delay: 2.6s;
@@ -122,6 +125,16 @@ svg {
 .letter {
   display: inline-block;
   transform: scaleY(1.1);
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+
+  animation-name: letters;
+  animation-duration: 0.36s;
+  animation-delay: calc( 2.5s + var(--i) * 0.15s );
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 .svg-wrapper {
@@ -290,13 +303,20 @@ svg {
 
 @keyframes letters {
   0% {
-    left: -288px;
+    left: calc( 100px - (var(--i) * 10px) );
     opacity: 0;
+    visibility: hidden;
+  }
+
+  1% {
+    opacity: 1;
+    visibility: visible;
   }
 
   100% {
-    left: 0;
+    left: calc( 275px - (var(--i) * 25px) );
     opacity: 1;
+    visibility: visible;
   }
 }
 
