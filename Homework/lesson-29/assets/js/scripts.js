@@ -1,14 +1,48 @@
-const str_1 = prompt('Your name')
-document.getElementById('name').innerHTML = `<h2> ${str_1} </h2>`
+const names = [
+    'Biba', 'Boba', 'Ne Biba', 'Ne boba', 'Bob',
+    'Ne Bob', 'Maks', 'Ne Maks', 'Ragnar', 'Ne ragnar'
+]
 
-const str_2 = prompt('Your surname')
-document.getElementById('surname').innerHTML = `<h2> ${str_2} </h2>`
+for ( let i = 0; i <= names.length; i++ ) {
+    console.log(names[i])
+}
 
-const str_3 = prompt('Your age')
-document.getElementById('age').innerHTML = `<h2> ${str_3} </h2>`
+console.log('---------------1')
 
-const str_4 = prompt('Your city')
-document.getElementById('city').innerHTML = `<h2> ${str_4} </h2>`
+for ( key in names ) {
+    console.log(names[key])
+}
 
-const str_5 = prompt('Your job')
-document.getElementById('job').innerHTML = `<h2> ${str_5} </h2>`
+console.log('---------------2')
+
+for ( key of names ) {
+    console.log(key)
+}
+
+console.log('---------------3')
+let i = 0
+
+while ( i <= names.length ) {
+    console.log(names[i])
+    i++
+}
+
+console.log('---------------4')
+let j = 0
+
+do {
+    console.log(names[j])
+    j++
+} while ( j <= names.length )
+
+console.log('---------------5')
+
+names.forEach( function (key) {
+    console.log(key)
+})
+
+console.log('---------------6')
+
+names.map( function (key) {
+    console.log(key)
+})
