@@ -46,3 +46,35 @@ console.log('---------------6')
 names.map( function (key) {
     console.log(key)
 })
+
+console.log('---------------7')
+
+names.forEach( function (key, i) {
+    if ( (i + 1) % 2 === 0 ) {
+        console.log('парний')
+    } else {
+        console.log('непарний')
+    }
+})
+
+console.log('---------------8')
+console.clear()
+
+console.log(
+    'Сума елементів масиву ' +
+    names.reduce((prev, current, i) => {
+    return prev + i
+    }, 0)
+)
+
+console.log('---------------9')
+
+let names1 = names.map( (name) => name = name )
+console.log(names1)
+
+let numbers = [ 1, 2, 3 ]
+names1[names1.lenght] = numbers
+console.log(names1)
+
+names1.flat(0)
+console.log(names1)
