@@ -73,8 +73,9 @@ let names1 = names.map( (name) => name = name )
 console.log(names1)
 
 let numbers = [ 1, 2, 3 ]
-names1[names1.lenght] = numbers
+names1[names1.length] = numbers
 console.log(names1)
 
-names1.flat(0)
-console.log(names1)
+n = names1.flat(1)
+console.log(n)
+console.log(names1.flat(1))
