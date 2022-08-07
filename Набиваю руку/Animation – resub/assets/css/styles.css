@@ -23,10 +23,6 @@ body {
   margin: 0;
 }
 
-svg {
-  border-radius: 2px;
-}
-
 .wrapper {
   height: 100vh;
   display: flex;
@@ -49,7 +45,6 @@ svg {
   animation-duration: 3.52s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  /* animation-timing-function: linear; */
   animation-timing-function: cubic-bezier(0.250, 0.250, 0.730, 0.375);
 }
 
@@ -69,11 +64,6 @@ svg {
   position: relative;
   left: 0px;
   top: 18px;
-  animation-name: letters;
-  animation-delay: 2.6s;
-  animation-duration: 1.16s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
 }
 
 .letter {
@@ -148,8 +138,8 @@ svg {
   width: 700px;
   height: 400px;
   position: absolute;
-  top: -500px;
-  left: -500px;
+  top: -175px;
+  left: 0px;
   transform: rotate(30deg);
   z-index: 1;
 
@@ -158,20 +148,13 @@ svg {
   background: -webkit-linear-gradient(-90deg, rgba(59,233,242,1) 0%, rgba(178,36,210,1) 100%);
   background: linear-gradient(-90deg, rgba(59,233,242,1) 0%, rgba(178,36,210,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3be9f2",endColorstr="#b224d2",GradientType=1);
-
-  animation-name: border;
-  /* animation-duration: 2.55s; */
-  animation-duration: 5.2s;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.740, 0.005, 0.245, 1.000);
 }
 
 .veil {
   width: 696px;
   height: 46px;
-  background-color: #080e1e;
+  background-color: transparent;
+  overflow: hidden;
   z-index: 2;
   position: relative;
 
@@ -180,32 +163,24 @@ svg {
   justify-content: center;
 }
 
-.wider {
-  background: #0c1427;
-  width: 100%;
-  height: 100%;
+.veil::after {
+  content: '';
+  width: 700px;
+  height: 700px;
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: -500px;
+  left: -500px;
+  transform: rotate(30deg);
+  z-index: 1;
 
-  animation-name: inside;
-  animation-duration: 2s;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.450, 0.205, 0.000, 0.210);
-}
+  background-color: #080e1e;
 
-#alert-message,
-#alert-user-message {
-  z-index: 5;
-  
-  animation-name: message;
+  animation-name: fill;
   animation-duration: 3s;
   animation-delay: 0;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-timing-function: easy-out;
+  animation-timing-function: linear;
 }
 
 /* 
@@ -422,40 +397,16 @@ svg {
   }
 }
 
-@keyframes border {
+@keyframes fill {
   0% {
-    top: -500px;
-    left: -581px;
-    transform: rotate(30deg);
-  }
-
-  50% {
     top: -175px;
-    left: 0px;
+    left: -47px;
     transform: rotate(30deg);
   }
 
   100% {
     top: -175px;
-    left: 0px;
-    transform: rotate(210deg);
-  }
-}
-
-@keyframes inside {
-  0% {
-    transform: scale(0, 0);
-  }
-
-  30% {
-    transform: scale(0.1, 1);
-  }
-
-  40% {
-    transform: scale(0.13, 1);
-  }
-
-  100% {
-    transform: scale(1, 1);
+    left: 676px;
+    transform: rotate(30deg);
   }
 }
