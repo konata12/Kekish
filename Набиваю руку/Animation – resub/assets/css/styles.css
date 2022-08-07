@@ -40,12 +40,9 @@ body {
   z-index: 2;
   position: relative;
   border-radius: 1px;
-  left: -10px;
-  animation-name: square;
-  animation-duration: 3.52s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.250, 0.250, 0.730, 0.375);
+  left: -332px;
+  bottom: -50px;
+  animation: jump 30s linear infinite;
 }
 
 .text {
@@ -186,6 +183,60 @@ body {
 /* 
   Keyframes
 */
+
+@keyframes jump {
+  0%   {
+    transform: scale3d(1, 1, 1);
+    bottom: -50px;
+  }
+
+  /* jump */
+  94.67%   {
+    transform: scale3d(1, 1, 1);
+    bottom: -50px;
+  }
+
+  95.33%  {
+    transform: scale3d(.7, 1.5, 1);
+    bottom: -30px;
+  }
+
+  96.33% {
+    transform: scale3d(1.5, .7, 1);
+    bottom: 0px;
+  }
+
+  97.33%  {
+    transform: scale3d(.7, 1.5, 1);
+    bottom: -30px;
+  }
+
+  98% {
+    transform: scale3d(1, 1, 1);
+    bottom: -50px;
+  }
+  /* jump/ */
+
+  98.5% {
+    transform: scale3d(1.1, 0.9, 1);
+    bottom: -52px;
+  }
+
+  99% {
+    transform: scale3d(1, 1, 1);
+    bottom: -50px;
+  }
+
+  99.5% {
+    transform: scale3d(1, 1, 1);
+    bottom: -47px;
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+    bottom: -50px;
+  }
+}
 
 @keyframes square {
   /* Up */
