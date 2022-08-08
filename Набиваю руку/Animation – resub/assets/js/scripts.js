@@ -1,16 +1,6 @@
-const letter = document.getElementsByClassName('letter')
-console.dir(letter)
-
-for (key of letter) {
-    if ( key.innerHTML === 'e') {
-        key.classList.add('e-width')
-        console.log(key.clientWidth)
-    }
-}
-
-for (key of letter) {
-    if ( key.innerHTML === 'c') {
-        key.classList.add('c-width')
-        console.log(key.clientWidth)
-    }
-}
+let elem = document.getElementById('load')
+  console.dir(elem)
+  console.dir(elem.offsetLeft)
+  elem.style.left = '200px'
+  console.dir(elem.offsetLeft)
+  console.dir(elem)
