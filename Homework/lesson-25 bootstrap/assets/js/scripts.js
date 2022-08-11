@@ -45,6 +45,8 @@ function change_color() {
     }
 }
 
+let e = 1
+
 // body.addEventListener('scroll', change_color())
 body.addEventListener('scroll', function(e) {
     console.log(e)
