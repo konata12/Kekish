@@ -74,7 +74,7 @@ employees.forEach( elem => {
             <li><strong>Вік: ${elem.age}</strong></li>
             <li><strong>Посада: ${elem.position}</strong></li>
             <li><strong>ЗП: ${elem.salaryPerYear}</strong></li>
-            <li><strong>Надбавка: ${(elem.salaryPerYear * 0.05).toFixed()}</strong></li>
+            <li><strong>Надбавка:  +5% ($${(elem.salaryPerYear * 0.05).toFixed()})</strong></li>
         </ul>`;
         console.log(1)
     } else {
