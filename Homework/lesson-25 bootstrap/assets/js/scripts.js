@@ -36,6 +36,7 @@ function handle_button_click_1() {
 }
 console.dir(header.getBoundingClientRect().top)
 console.dir(sec_1.getBoundingClientRect().top + sec_1.clientHeight - 1)
+console.dir(sec_2.getBoundingClientRect().top + sec_2.clientHeight - 1)
 
 function change_color() {
     if ( (header.getBoundingClientRect().top) <= (sec_1.getBoundingClientRect().top + sec_1.clientHeight - 1) ) {

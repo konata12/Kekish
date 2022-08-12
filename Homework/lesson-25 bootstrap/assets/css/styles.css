@@ -271,8 +271,9 @@
     line-height: 1.714;
 }
 .section-2 .container .row:nth-child(2) {
-    padding-top: 115px;
+    padding-top: 100px;
 }
+/* XL */
 .section-2_item {
     padding-left: 20px;
     padding-right: 5px;
@@ -289,6 +290,7 @@
     padding-left: 5px;
     padding-right: 20px;
 }
+/* XL */
 .section-2_item-position {
     padding: 44px 0px 43px;
     background-color: #c45158;
@@ -330,6 +332,28 @@
 /* Fonts/ */
 
 /* Responsive */
+@media (max-width: 1200px) {
+/* Main */
+    .section-2 {
+        height: auto;
+    }
+/* XL */
+    .section-2_item {
+    padding: auto;
+    }
+    .section-2_item:nth-child(2) {
+    padding: auto;
+    }
+    .section-2_item:nth-child(3) {
+    padding: auto;
+    }
+    .section-2_item:nth-child(4) {
+    padding: auto;
+    }
+/* XL */
+/* Main/ */
+}
+
 @media (max-width: 1050px) {
 /* Header */
 
