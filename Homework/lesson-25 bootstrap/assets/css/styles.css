@@ -7,6 +7,9 @@
     scroll-behavior: smooth;
 }
 
+section {
+    overflow: hidden;
+}
 /* General/ */
 
 /* Header */
@@ -52,7 +55,7 @@
     padding-top: 40px;
     padding-bottom: 17px;
     border-radius: 0px 0px 5px 5px;
-    width: 100%;
+    width: calc((100% - 7px * 8) / 5);
     cursor: pointer;
     transition: all 0.3s ease-out;
     margin: 0 7px;
@@ -183,7 +186,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: calc(50% - 60px);
+    top: calc(50% - 85px);
     left: 0;
     /* padding: 0, 50px; */
 }
@@ -242,7 +245,7 @@
     color: #fff;
     font-family: 'lato';
 }
-.section-2 h2 {
+.sec-title {
     margin-bottom: 0;
 
     text-transform: uppercase;
@@ -260,7 +263,7 @@
     color: #ec9da2;
     letter-spacing: 0.5px;
 }
-.section-2 .row .col-12 > p {
+.sec-text {
     margin-top: 15px;
     margin-bottom: 0;
     padding: 0 20px;
@@ -300,9 +303,6 @@
     display: flex;
     justify-content: center;
 }
-.section-2_item-text {
-
-}
 .section-2_item-text h4 {
     text-transform: uppercase;
     font-size: 30px;
@@ -318,6 +318,137 @@
 }
 /* Section-2/ */
 
+/* Section-3 */
+.section-3 {
+    background-image: url(../img/bg-sec3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 150px 0 0px;
+
+    text-align: center;
+    color: #fff;
+    font-family: 'lato';
+}
+.section-3 .sec-text {
+    color: rgb(230, 209, 227);
+    margin-top: 35px;
+}
+.meet-team {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.meet-team p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    display: inline-block;
+    width: 100%;
+
+    text-transform: uppercase;
+    font-family: 'lato-black';
+    font-size: 25px;
+}
+/* XL */
+.section-3 .section-2_item {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.section-3 .section-2_item:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.section-3 .section-2_item:nth-child(3) {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.section-3 .section-2_item:nth-child(4) {
+    padding-left: 5px;
+    padding-right: 20px;
+}
+/* XL */
+.section-3 .section-2_item-position {
+    padding: 44px 25px 43px;
+    background-color: rgb(77, 63, 75, 0.5);
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+.section-3 .section-2_item-position:hover {
+    background-color: rgb(77, 63, 75, 0.8);
+}
+.section-3 .section-2_item-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.section-3 .section-2_item-position .section-2_item-img > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-out;
+}
+.section-3 .section-2_item-position:hover .section-2_item-img > img:nth-child(1) {
+    opacity: 0;
+    visibility: none;
+}
+.section-3 .section-2_item-position .section-2_item-img > img:nth-child(2) {
+    opacity: 0;
+    visibility: none;
+}
+.section-3 .section-2_item-position:hover .section-2_item-img > img:nth-child(2) {
+    opacity: 1;
+    visibility: visible;
+}
+.section-3 .section-2_item-text h4 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'lato-black';
+    color: #c7b6c5;
+
+    margin-top: 184px;
+}
+.section-3 .section-2_item-position:hover h4 {
+    color: white;
+}
+.section-3 .section-2_item-text p {
+    font-family: 'lato';
+    color: #a1ca6c;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0 25px;
+}
+.section-3 .section-2_item-position:hover p {
+    color: #ff8973;
+}
+.section-3_links {
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.section-3_link {
+    background-color: #a1859e;
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    transition: all 0.3s ease-out;
+}
+.section-3 .section-2_item-position:hover a:nth-child(1) .section-3_link {
+    background-color: #4f689e;
+}
+.section-3 .section-2_item-position:hover a:nth-child(2) .section-3_link {
+    background-color: #74c7d5;
+}
+.section-3 .section-2_item-position:hover a:nth-child(3) .section-3_link {
+    background-color: #df5c64;
+}
+.section-3 .section-2_item-position:hover a:nth-child(4) .section-3_link {
+    background-color: #3e61af;
+}
+/* Section-3/ */
+
 /* Main/ */
 
 /* Fonts */
@@ -332,22 +463,34 @@
 /* Fonts/ */
 
 /* Responsive */
+/* Bootstrap */
 @media (max-width: 1200px) {
 /* Main */
+/* Section-1 */
+.owl-nav {
+    top: calc(50% - 85px);
+}
+/* Section-1/ */
+
 /* Section-2 */
-    .section-2 {
+    .section-2,
+    .section-3 {
         height: auto;
     }
 /* XL */
+    .section-3 .section-2_item,
     .section-2_item {
     padding: 0 0 15px;
     }
+    .section-3 .section-2_item:nth-child(2),
     .section-2_item:nth-child(2) {
     padding: 0 0 15px;
     }
+    .section-3 .section-2_item:nth-child(3),
     .section-2_item:nth-child(3) {
     padding: 0 0 15px;
     }
+    .section-3 .section-2_item:nth-child(4),
     .section-2_item:nth-child(4) {
     padding: 0 0 15px;
     }
@@ -401,6 +544,25 @@
 @media (max-width: 576px) {
 /* Main */
 /* Section-2 */
+    .section-2 {
+        padding: 120px 0 0px;
+    }
+    .sec-title {
+        font-size: 45px;
+    }
+    .section-2 h3 {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    .sec-text {
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding: 0 20px;
+        font-size: 12px;
+        letter-spacing: 0.1px;
+        line-height: 1.714;
+    }
 /* XL */
     .section-2_item {
     padding: 0 0 15px;
@@ -418,8 +580,9 @@
 /* Section-2/ */
 /* Main/ */
 }
-            
+/* Bootstrap/ */
 
+/* Custom */
 @media (max-width: 1050px) {
 /* Header */
 
@@ -579,7 +742,7 @@
 }
 
 .owl-nav {
-    top: calc(50% - 58px);
+    top: calc(50% - 85px);
 }
 
 .owl-carousel .owl-nav button.owl-prev,
@@ -630,7 +793,7 @@
 }
 
 .owl-nav {
-    top: calc(50% - 58px);
+    top: calc(50% - 80px);
 }
 
 .owl-carousel .owl-nav button.owl-prev,
@@ -654,5 +817,5 @@
 
 /* Main/ */
 }
-
+/* Custom/ */
 /* Responsive/ */

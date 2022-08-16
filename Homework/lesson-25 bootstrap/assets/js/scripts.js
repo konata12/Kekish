@@ -30,10 +30,20 @@ const sec_2_btn = document.getElementById('services-btn')
 console.dir(sec_2_btn)
 console.dir(sec_2_btn.scrollHeight)
 
+// Scroll position
+
+
 // Scroll and color function
 function handle_button_click_1() {
     sec_1.scrollIntoView({block: "center", behavior: "smooth"});
 }
+sec_1_btn.addEventListener('click', handle_button_click_1())
+
+function handle_button_click_2() {
+    sec_2.scrollIntoView({block: "center", behavior: "smooth"});
+}
+sec_2_btn.addEventListener('click', handle_button_click_2())
+
 console.dir(header.getBoundingClientRect().top)
 console.dir(sec_1.getBoundingClientRect().top + sec_1.clientHeight - 1)
 console.dir(sec_2.getBoundingClientRect().top + sec_2.clientHeight - 1)
@@ -45,12 +55,15 @@ function change_color() {
         sec_2_btn.classList.add('tag-active')
     }
 }
+change_color()
 
 let e = 1
 
 // body.addEventListener('scroll', change_color())
-body.addEventListener('scroll', function(e) {
+body.addEventListener('onscroll', function(e) {
     console.log(e)
 })
- 
-sec_1_btn.addEventListener('click', handle_button_click_1);
+
+// Section-3 img
+const img = document.querySelector('.section-3 .section-2_item-img img')
+console.dir(img)

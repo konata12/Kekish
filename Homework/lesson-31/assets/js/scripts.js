@@ -41,11 +41,11 @@ employees = employees.filter(elem => elem.age >= 20 && elem.age <=30)
 console.log(employees)
 
 // Шукаю річну зп
-employees = employees.map( (elem, i, arr) => {
-    // console.log( elem.salaryPerMonth.reduce( (prev, current) => {return prev + current}, 0 ) );
+employees = employees.map( (elem) => {
+    console.log( elem.salaryPerMonth.reduce( (prev, current) => {return prev + current}, 0 ) );
     // console.log(elem.slalryPerYear);
     
-    return elem = {
+    return {
         id: elem.id,
 		fName: elem.fName, lName: elem.lName,
 		age: elem.age,
@@ -55,7 +55,8 @@ employees = employees.map( (elem, i, arr) => {
     }
 
     // Ця паскуда працює і виводить, але наступна паскуда не виводить
-    // elem.slalryPerYear = elem.salaryPerMonth.reduce( (prev, current) => {return prev + current}, 0 );
+    // return elem.salaryPerYear = elem.salaryPerMonth.reduce( (prev, current) => {return prev + current}, 0 );
+	// salaryPerYear
     // console.log(elem);
 })
 console.dir(employees)
