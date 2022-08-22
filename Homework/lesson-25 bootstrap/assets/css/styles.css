@@ -479,6 +479,20 @@ section {
     margin-bottom: 0;
 }
 
+.collapse-btns {
+    list-style-type: none;
+    margin-bottom: 0;
+
+    font-family: 'lato-bold';
+    font-size: 16px;
+}
+.collapse-btns li {
+    margin: 0 10px;
+}
+
+#photography {
+    position: relative;
+}
 
 .photography-item_position {
     background-color: #eeeeee;
