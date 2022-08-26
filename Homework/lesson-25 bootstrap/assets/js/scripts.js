@@ -67,3 +67,4 @@ body.addEventListener('onscroll', function(e) {
 // Section-3 img
 const img = document.querySelector('.section-3 .section-2_item-img img')
 console.dir(img)
+console.clear()

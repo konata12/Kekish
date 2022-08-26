@@ -24,7 +24,7 @@
                         </a>
                     </div>
 
-                    <div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 col-xs-6 col-5 nav justify-content-end">
+                    <div class="navigation col-xl-6 col-lg-8 col-md-8 col-sm-8 col-xs-6 col-5 justify-content-end">
                         <ul>
                             <li class="tag" id="home-btn">Home</li>
                             <li class="tag" id="services-btn">Services</li>
@@ -264,7 +264,7 @@
                             </div>
                         </div>
 
-                        <div class="section-2_item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-10 offset-xl-0 offset-lg-1 offset-md-3 offset-sm-2 offset-1">
+                        <div class="section-2_item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-10 offset-xl-0 offset-lg-2 offset-md-3 offset-sm-2 offset-1">
                             <div class="section-2_item-position">
                                 <div class="section-2_item-img">
                                     <img src="assets/img/inactive-teammate.png" alt="">
@@ -354,7 +354,7 @@
                             </div>
                         </div>
 
-                        <div class="section-2_item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-10 offset-xl-0 offset-lg-1 offset-md-3 offset-sm-2 offset-1">
+                        <div class="section-2_item col-xl-3 col-lg-4 col-md-6 col-sm-8 col-10 offset-xl-0 offset-lg-2 offset-md-3 offset-sm-2 offset-1">
                             <div class="section-2_item-position">
                                 <div class="section-2_item-img">
                                     <img src="assets/img/inactive-teammate.png" alt="">
@@ -402,7 +402,7 @@
                 </div>
             </section>
 
-            <section class="section-4" id="portfolio">
+            <section class="section-4" id="portfolios">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -426,35 +426,497 @@
                             portfolio
                         </h3>
 
-                        <ul class="collapse-btns d-flex">
-                            <li>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <ul  class="nav nav-pills d-flex" id="portfolio" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-all-tab" data-toggle="pill" data-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">
                                     All
-                                </a>
+                                </button>
                             </li>
 
-                            <li>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#photography" role="button" aria-expanded="true" aria-controls="photography">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-photo-tab" data-toggle="pill" data-target="#photography" type="button" role="tab" aria-controls="photography" aria-selected="true">
                                     Photography
-                                </a>
+                                </button>
                             </li>
 
-                            <li>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-logo_design-tab" data-toggle="pill" data-target="#logo_design" type="button" role="tab" aria-controls="logo_design" aria-selected="false">
                                     Logo design
-                                </a>
+                                </button>
                             </li>
 
-                            <li>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-web_design-tab" data-toggle="pill" data-target="#web_design" type="button" role="tab" aria-controls="web_design" aria-selected="false">
                                     Web design
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="row">
-                        <div id="photography" class="section-4_item collapse col-12 d-flex flex-wrap">
+                    <div class="row tab-content position-relative" id="pills-tabContent">
+                        <!-- <div id="all" class="section-4_item tab-pane fade d-flex flex-wrap col-12" role="tabpanel" aria-labelledby="pills-all-tab">
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div id="photography" class="section-4_item tab-pane fade show active d-flex flex-wrap col-12" role="tabpanel" aria-labelledby="pills-photo-tab">
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="logo_design" class="section-4_item tab-pane fade d-flex flex-wrap col-12" role="tabpanel" aria-labelledby="pills-logo_design-tab">
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="photography-item col-3">
+                                <div class="photography-item_position">
+                                    <div class="photography-item_img">
+                                        <img src="assets/img/photo-1.jpg" alt="">
+                                        <img src="assets/img/triangle.png" alt="">
+
+                                        <a href="#">
+                                            <div class="cover d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/cover.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="photography-item_text d-flex justify-content-center">
+                                        aenean a elit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="web_design" class="section-4_item tab-pane fade d-flex flex-wrap col-12" role="tabpanel" aria-labelledby="pills-web_design-tab">
                             <div class="photography-item col-3">
                                 <div class="photography-item_position">
                                     <div class="photography-item_img">
@@ -611,12 +1073,151 @@
 
                 </div>
             </section>
+
+            <section class="section-5" id="contacts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="sec-title">
+                                contact us
+                            </h2>
+
+                            <p class="sec-text">
+                                Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. 
+                                Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim 
+                                diam, ullamcorper quis libero et, ultricies commodo est. Quisque at 
+                                ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet 
+                                lacus, eget laoreet erat posuere quis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex">
+                        <div class="address d-flex flex-wrap col-xl-6 col-lg-7 col-md-12 offset-xl-0 offset-lg-0 offset-md-0">
+                            <h3 class="contact_title">
+                                Address
+                            </h3>
+
+                            <div class="address_text d-flex flex-column">
+                                <div class="office">
+                                    <p>
+                                        Acrostia
+                                    </p>
+
+                                    <p>
+                                        Sevenoaks Rd 
+                                    </p>
+
+                                    <p>
+                                        Sevenoaks TN14 7HR, UK
+                                    </p>
+                                </div>
+
+                                <div class="details d-flex">
+                                    <div class="detail">
+                                        <p>
+                                            Phone:
+                                        </p>
+
+                                        <p>
+                                            Fax:
+                                        </p>
+
+                                        <p>
+                                            E-mail:
+                                        </p>
+
+                                        <p>
+                                            Skype:
+                                        </p>
+                                    </div>
+
+                                    <div class="detal_info">
+                                        <p>
+                                            +44 555 555 555
+                                        </p>
+
+                                        <p>
+                                            +44 556 555 555
+                                        </p>
+
+                                        <p>
+                                            info@acrostia.com
+                                        </p>
+
+                                        <p>
+                                            Ac0stia
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="address_location">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+
+                        <div class="feedback col-xl-6 col-lg-5 col-md-12 offset-xl-0 offset-lg-0 offset-md-0">
+                            <h3 class="contact_title">
+                                Ask a question
+                            </h3>
+
+                            <form class="feedback_form">
+                                <div class="d-flex">
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <textarea name="" id="question" cols="30" rows="5" placeholder="Your question"></textarea>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="feedback_btn">
+                                        send
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
+        <footer id="footer">
+            <div class="container ">
+                <div class="row d-flex justify-content-center">
+                    <a href="#">
+                        <div class="footer_link d-flex justify-content-center align-items-center">
+                            <img src="assets/img/facebook_footer.png" alt="">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="footer_link d-flex justify-content-center align-items-center">
+                            <img src="assets/img/twitter_footer.png" alt="">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="footer_link d-flex justify-content-center align-items-center">
+                            <img src="assets/img/g+_footer.png" alt="">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="footer_link d-flex justify-content-center align-items-center">
+                            <img src="assets/img/linkedin_footer.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/map.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm99_fMu7bPxENWHPuy5WCBro3cxDpusk&callback=initMap"></script>
         <script src="assets/vendor/jquery-3.6.0.min.js"></script>
         <script src="assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="assets/vendor/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
-        <script src="assets/js/libriaries.js"></script>
+        <script src="assets/js/libriaries.js"></script>   
         <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/tabs.js"></script>
     </body>
 </html>

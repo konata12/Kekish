@@ -25,10 +25,10 @@ section {
 
 /* Nav */
 
-.nav {
+.navigation {
     padding-right: 5px;
 }
-.nav ul {
+.navigation ul {
     list-style: none;
     font-family: 'lato-thin';
     font-size: 18px;
@@ -41,7 +41,7 @@ section {
     margin-bottom: 0;
     width: 100%;
 }
-.nav a {
+.navigation a {
     display: inline-block;
     width: calc((100% - 7px * 8) / 5);
     margin: 0 7px;
@@ -50,7 +50,7 @@ section {
     color: #fff;
     text-decoration: none;
 }
-.nav li {
+.navigation li {
     display: inline-block;
     padding-top: 40px;
     padding-bottom: 17px;
@@ -62,10 +62,10 @@ section {
 
     text-align: center;
 }
-.nav ul li:nth-child(1) {
+.navigation ul li:nth-child(1) {
     margin-left: 0;
 }
-.nav ul li:nth-child(5) {
+.navigation ul li:nth-child(5) {
     margin-right: 0;
 }
 .tag {
@@ -238,8 +238,8 @@ section {
     background-image: url(../img/bg-sec2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding: 150px 0 0px;
+    height: auto;
+    padding: 150px 0 124px;
 
     text-align: center;
     color: #fff;
@@ -323,8 +323,8 @@ section {
     background-image: url(../img/bg-sec3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding: 150px 0 0px;
+    height: auto;
+    padding: 150px 0 124px;
 
     text-align: center;
     color: #fff;
@@ -454,7 +454,7 @@ section {
     background-image: url(../img/bg-sec4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 150px 0 0px;
+    padding: 150px 0 124px;
 
     text-align: center;
     color: #fff;
@@ -469,6 +469,7 @@ section {
     /* border-top: 1px solid black;
     border-bottom: 1px solid black; */
     margin: 0 5px;
+    padding: 32px 0;
 }
 .lines h3 {
     font-size: 20px;
@@ -490,9 +491,56 @@ section {
     margin: 0 10px;
 }
 
+/* Pills */
+#pills-all-tab,
+#pills-photo-tab,
+#pills-logo_design-tab,
+#pills-web_design-tab {
+    color: white;
+    font-family: 'lato-bold';
+    font-size: 16px;
+
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+#pills-all-tab.active,
+#pills-photo-tab.active,
+#pills-logo_design-tab.active,
+#pills-web_design-tab.active {
+    background-color: #f5c149;
+}
+/* Pills/ */
+
+/* Tab-content */
+#pills-tabContent {
+    height: auto;
+}
+#all {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 #photography {
     position: relative;
+    top: 0;
+    left: 0;
 }
+
+#logo_design {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#web_design {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* Tab-content/ */
 
 .photography-item_position {
     background-color: #eeeeee;
@@ -569,7 +617,185 @@ section {
 }
 /* Section-4/ */
 
+/* Section-5 */
+.section-5 {
+    background-image: url(../img/bg-sec5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0 81px;
+
+    text-align: center;
+    color: #fff;
+    font-family: 'lato';
+}
+.section-5 .sec-text {
+    color: #fff;
+    margin-bottom: 120px;
+}
+
+.contact_title {
+    font-size: 30px;
+    font-family: 'lato';
+    color: rgb(255, 255, 255);
+    line-height: 1;
+
+    display: inline-block;
+    margin-bottom: -30px;
+    width: 100%;
+    height: auto;
+}
+
+/* Details */
+.address {
+    text-align: left;
+
+    padding-left: 25px;
+    height: auto;
+}
+.address p {
+    margin-bottom: 0;
+}
+.office {
+    margin-bottom: 75px;
+}
+.office p:nth-child(1) {
+    font-size: 20px;
+    font-family: "lato-bold";
+    color: rgb(192, 223, 218);
+
+    margin-bottom: 20px;
+}
+.office p + p {
+    font-size: 16px;
+    font-family: "lato";
+    color: rgb(255, 255, 255);
+}
+.detail {
+    color: rgb(192, 223, 218);
+    font-size: 16px;
+}
+.detal_info {
+    font-size: 16px;
+
+    margin-left: 25px;
+}
+.address_location {
+    padding-top: 20px;
+    padding-left: 37px;
+}
+#map {
+    height: 220px;
+    width: 260px;
+    border-radius: 4px;
+}
+/* Details/ */
+
+/* Form */
+.feedback {
+    text-align: left;
+
+    padding-left: 10px;
+    padding-right: 22px;
+}
+.feedback_form {
+    margin-top: 47px;
+}
+.feedback input {
+    width: 50%;
+
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(104, 160, 151);
+    padding: 15px 19px;
+    font-size: 16px;
+    font-family: "lato";
+    color: rgb(92, 146, 138);
+    transition: all 0.3s ease-out;
+}
+.feedback input:nth-child(1) {
+    margin-right: 10px;
+}
+.feedback input:nth-child(2) {
+    margin-left: 10px;
+}
+.feedback input::placeholder {
+    font-size: 16px;
+    font-family: "lato";
+    color: rgb(130, 200, 189);
+}
+.feedback input:focus {
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+.feedback input:focus::placeholder {
+    color: transparent;
+}
+#question {
+    resize: none;
+    width: 100%;
+    margin-top: 20px;
+
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(104, 160, 151);
+    padding: 15px 19px;
+    transition: all 0.3s ease-out;
+    margin-bottom: 30px;
+}
+#question::placeholder {
+    font-size: 16px;
+    font-family: "lato";
+    color: rgb(130, 200, 189);
+}
+#question:focus {
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+#question:focus::placeholder {
+    color: transparent;
+}
+.feedback_btn {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "lato-black";
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(223, 92, 100);
+    box-shadow: inset 0px -4px 0px 0px rgba(178, 74, 80, 0.5);
+    width: 260px;
+    height: 50px;
+    transition: all 0.3s ease-out;
+}
+.feedback_btn:hover {
+    background-color: rgb(255, 95, 106);
+}
+/* Form/ */
+
+/* Section-5/ */
+
 /* Main/ */
+
+/* Footer */
+#footer {
+    padding: 42px 0;
+    background-color: #68a097;
+}
+.footer_link {
+    height: 60px;
+    width: 60px;
+    background-color: #82c8bd;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 0.3s ease-out;
+}
+.footer_link:hover {
+    background-color: #83dbce;
+}
+/* Foooter/ */
 
 /* Fonts */
 /* 
@@ -637,6 +863,35 @@ section {
     }
 /* XL */
 /* Section-2/ */
+
+/* Section-5 */
+    .section-5 .sec-text {
+        margin-bottom: 50px;
+    }
+
+    .contact_title {
+        margin-bottom: 30px;
+    }
+    .address,
+    .feedback {
+        padding: 0 15px;
+    }
+    .address {
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .address_location {
+        padding: 0;
+        justify-content: right;
+    }
+    #map {
+        height: 100%;
+        width: 297px;
+    }
+    .feedback_form {
+        margin-top: 0;
+    }
+/* Section-5/ */
 /* Main/ */
 }
 
@@ -698,6 +953,57 @@ section {
     }
 /* XL */
 /* Section-2/ */
+
+/* Section-5 */
+
+    .contact_title {
+        font-size: 22.5px;
+    }
+    /* Address */
+    .address {
+        flex-direction: column;
+    }
+    .office {
+        width: 50%;
+    }
+    .office p:nth-child(1) {
+        font-size: 15px;
+    }
+    .office p + p {
+        font-size: 12px;
+    }
+    .details {
+        width: 50%;
+    }
+    .detail {
+        font-size: 12px;
+    }
+    .detal_info {
+        font-size: 12px;
+    }
+    .address_location {
+        padding-top: 15px;
+    }
+    #map {
+        height: 320px;
+        width: 100%;
+    }
+    /* Address/ */
+
+    /* Feedback */
+    .feedback_form div:nth-child(1) {
+        flex-direction: column;
+    }
+    .feedback .feedback_form input {
+        margin: 0;
+        width: 100%;
+    }
+    .feedback .feedback_form input:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    /* Feedback/ */
+
+/* Section-5/ */
 /* Main/ */
 }
 /* Bootstrap/ */
