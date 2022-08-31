@@ -1,5 +1,8 @@
 // Header
 const header = document.getElementById('header')
+const header_img = document.querySelector('.header-img a img')
+const navigation = document.querySelector('.navigation ul')
+console.dir(navigation)
 
 // Section-1
 const sec_1 = document.getElementById('home')
@@ -56,6 +59,37 @@ function change_color() {
     }
 }
 
+function hover() {
+    navigation.classList.add('act')
+}
+function notHover(e) {
+    function remove() {
+        navigation.classList.remove('act')
+        console.log(1)
+    }
+    let timerId = setTimeout(remove, 500)
+
+    navigation.addEventListener('mouseover', function() {
+        clearTimeout(timerId)
+        navigation.classList.add('act')
+        console.log(2)
+    })
+
+    navigation.addEventListener('mouseout', function() {
+        navigation.classList.remove('act')
+        console.log(3)
+    })
+    
+    // if(e.relatedTarget == navigation) {
+    //     navigation.classList.add('act')
+    // } else {
+    //     function remove() {
+    //         navigation.classList.remove('act')
+    //     }
+    //     setTimeout(remove, 2500)
+    // }
+}
+
 function handle_button_click_1() {
     sec_1.scrollIntoView({block: "start", behavior: "smooth"});
 }
@@ -79,6 +113,9 @@ function handle_button_click_5() {
 // Події
 change_color()
 window.addEventListener('scroll', change_color)
+
+header_img.addEventListener('mouseover', hover)
+header_img.addEventListener('mouseout', notHover)
 
 sec_1_btn.addEventListener('click', handle_button_click_1)
 sec_2_btn.addEventListener('click', handle_button_click_2)
