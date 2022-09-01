@@ -62,32 +62,20 @@ function change_color() {
 function hover() {
     navigation.classList.add('act')
 }
-function notHover(e) {
+function notHover() {
     function remove() {
         navigation.classList.remove('act')
-        console.log(1)
     }
     let timerId = setTimeout(remove, 500)
 
     navigation.addEventListener('mouseover', function() {
         clearTimeout(timerId)
         navigation.classList.add('act')
-        console.log(2)
     })
 
     navigation.addEventListener('mouseout', function() {
         navigation.classList.remove('act')
-        console.log(3)
     })
-    
-    // if(e.relatedTarget == navigation) {
-    //     navigation.classList.add('act')
-    // } else {
-    //     function remove() {
-    //         navigation.classList.remove('act')
-    //     }
-    //     setTimeout(remove, 2500)
-    // }
 }
 
 function handle_button_click_1() {

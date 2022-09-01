@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            input,
+            select,
+            button {
+                width: 150px;
+                margin-bottom: 20px;
+            }
+        </style>
+
+        <form id="set-order">
+            <input type="text" id="name" required placeholder="Як вас звати">
+            <input type="number" id="table" required min="1" max="20" placeholder="Ваш столик">
+            <select name="first" id="first" required placeholder="Перше блюдо">
+                <option value="Борщ">Борщ</option>
+                <option value="Гороховий суп">Гороховий суп</option>
+                <option value="Несмачний суп">Несмачний суп</option>
+            </select>
+
+            <select name="second" id="second" required placeholder="Друге блюдо">
+                <option value="Бульба">Бульба</option>
+                <option value="Рис">Рис</option>
+                <option value="Гречка">Гречка</option>
+            </select>
+
+            <select name="drink" id="drink" required placeholder="Напій">
+                <option value="Вода">Вода</option>
+                <option value="Пиво">Пиво</option>
+                <option value="Cік">Cік</option>
+            </select>
+
+            <button type="submit">
+                Замовити
+            </button>
+        </form>
+
+        <div id="res"></div>
+
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
