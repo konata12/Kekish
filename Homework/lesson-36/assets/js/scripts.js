@@ -3,7 +3,7 @@ function setOrder() {
 
 	const order = document.createElement('div')
 	const every_order = document.querySelector('#res')
-	const order_info = document.getElementById('set-order').children
+	const order_info = event.target.children
 
 	order.innerHTML =  `<p>Ім'я: ${ order_info[0].value }</p>
 						<p>№ столика: ${ order_info[1].value }</p>
