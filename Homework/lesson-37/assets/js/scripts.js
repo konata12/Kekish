@@ -9,7 +9,7 @@ function clock() {
 
     const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
     const months = ['jan', 'feb', 'mur', 'apr', 'may', 'jun', 
-                    'jul', 'aug', 'sep', 'oct', 'nov', 'sec', ]
+                    'jul', 'aug', 'sep', 'oct', 'nov', 'sec',]
 
     week_day = days[week_day]
     month = months[month]
@@ -45,4 +45,5 @@ setInterval(bg, 100)
 
 // Годинник
 clock()
-setInterval(clock, 1000)
+const ms = new Date().getMilliseconds()
+setTimeout(setInterval(clock, 1000), 1000 - ms)
