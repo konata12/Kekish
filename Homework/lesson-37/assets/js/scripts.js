@@ -46,4 +46,4 @@ setInterval(bg, 100)
 // Годинник
 clock()
 const ms = new Date().getMilliseconds()
-setTimeout(setInterval(clock, 1000), 1000 - ms)
+setTimeout(() => {setInterval(clock, 1000)}, 1000 - ms)
