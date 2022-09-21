@@ -5,14 +5,12 @@ import Nav from './Nav.jsx'
 import logo from '../../img/logo.jpg'
 
 function Header() {
+  const name = 'aaa'
   return <header className="header">
-      <div className="container">
-        <Nav />
-      </div>
+    <div className="container">
+      <Nav />
+    </div>
   </header>;
-  
-  const
-
 }
 
 export default Header;
