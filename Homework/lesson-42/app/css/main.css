@@ -1,0 +1,10 @@
+h1 {
+  font-size: 37px;
+}
+h1 span {
+  font-weight: bold;
+  color: blueviolet;
+}
+h2 {
+  color: aliceblue;
+}
